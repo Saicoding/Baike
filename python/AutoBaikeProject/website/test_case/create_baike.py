@@ -1,13 +1,15 @@
-from selenium.webdriver.common.by import By
-from model import myunit
-from page_object.trade_login import *
-import unittest
-from create.create_funs import CreateFuns
-from create.book_zgrm_create import Bookzgrm
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import datetime as d
+import unittest
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
+from create.book_zgrm_create import Bookzgrm
+from create.create_funs import CreateFuns
+from model import myunit
 from model.function import bar_pop, pop
+from page_object.trade_login import *
 
 # 设置无头还是有头
 myunit.StartEnd.headless = True
@@ -18,7 +20,7 @@ class CreateBaike(myunit.StartEnd):
 		mod = {
 			'order': 4,  # 1顺序，2随机，3倒叙,4单点
 			'each_num': 10,  # 表示每个帐户创建的词条数
-			'index': 3  # 从第几个账号开始
+			'index': 4  # 从第几个账号开始
 		}
 
 		start_user_index = mod['index']

@@ -1,12 +1,14 @@
-from model import myunit
 import datetime as d
-from edit.edit_funs import EditFuns
+
 from selenium.webdriver.common.by import By
-from page_object.trade_login import *
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
 from edit.book_zgrm_edit import Bookzgrm
+from edit.edit_funs import EditFuns
+from model import myunit
 from model.function import bar_pop, pop
+from page_object.trade_login import *
 
 # 设置无头还是有头
 myunit.StartEnd.headless = False
@@ -17,7 +19,7 @@ class EditBaike(myunit.StartEnd):
 		mod = {
 			'order': 4,  # 1顺序，2随机，3倒叙,4单点
 			'each_num': 6,  # 表示每个帐户编辑的词条数
-			'index': 1  # 从第几个账号开始4
+			'index': 2  # 从第几个账号开始4
 		}
 		start_user_index = mod['index']
 		users = [
