@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py" line="20" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py" line="19" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py" line="22" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py" line="21" mnemonic="2" />
     <bookmark url="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/monitor.py" line="4" mnemonic="4" />
     <bookmark url="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py" line="12" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5b5a223-1037-4a74-bd0f-8fab31b42771" name="Default" comment="test">
-      <change afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/imgs/中职班主任专业能力提升读本(中等职业教育规划教材).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/imgs/基因机器：推动人类自我进化的生物科技.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/imgs/我不只是数学.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/imgs/文献检索与综述实训教程（21世纪信息资源管理系列教材）.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/imgs/美国积极思想简史：论那些重塑美国国民特质的思维模式.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/imgs/走进古典诗词写作（人大附中名师语文公开课）.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c5b5a223-1037-4a74-bd0f-8fab31b42771" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/all_created_baike.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/all_created_baike.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/create.ini" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/create.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/monitor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/monitor.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/search.ini" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/search.ini" afterDir="false" />
     </list>
@@ -76,10 +65,7 @@
             <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="289">
-                  <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#0#24#0" expanded="true" />
-                  </folding>
+                  <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -87,8 +73,8 @@
           <file leaf-file-name="search_baike.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+                <state relative-caret-position="323">
+                  <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
                   <folding>
                     <element signature="e#0#43#0" expanded="true" />
                   </folding>
@@ -104,9 +90,9 @@
             <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="103">
-                  <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+                  <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
                   <folding>
-                    <element signature="e#0#43#0" expanded="true" />
+                    <element signature="e#0#20#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -140,6 +126,12 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Saicoding &lt;417353147@qq.com&gt;" />
+        <option value="Sanyan" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
@@ -409,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528363646463</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="good version">
+      <created>1528375702037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1528375702037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -512,13 +511,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/python/AutoBaikeProject" />
     </ignored-roots>
     <MESSAGE value="好的" />
     <MESSAGE value="k" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="good version" />
+    <option name="LAST_COMMIT_MESSAGE" value="good version" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -830,10 +832,7 @@
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -850,17 +849,17 @@
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="323">
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
