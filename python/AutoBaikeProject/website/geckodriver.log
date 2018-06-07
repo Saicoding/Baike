@@ -1,0 +1,971 @@
+1526962426689	geckodriver	INFO	geckodriver 0.20.1
+1526962426712	geckodriver	INFO	Listening on 127.0.0.1:35076
+1526962429655	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.aNdioSWquBQK"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526962433463	Marionette	INFO	Listening on port 35085
+1526962434072	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526962435215	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/%E6%B5%8F%E8%A7%88%E5%99%A8/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/%E6%B5%8F%E8%A7%88%E5%99%A8/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+GeckoDriver.prototype.quit()@driver.js:3300
+despatch()@server.js:293
+execute()@server.js:267
+onPacket/<()@server.js:242
+onPacket()@server.js:241
+_onJSONObjectReady/<()@transport.js:500
+[Parent 47148, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 47560, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 47560, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 30396, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 30396, Chrome_Ch[Parent 47148, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 28784, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526962624112	geckodriver	INFO	geckodriver 0.20.1
+1526962624133	geckodriver	INFO	Listening on 127.0.0.1:35134
+1526962627145	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.hZgAY0ZIOMTE"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526962632078	Mar1526962634500	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.xH8Nd2TuAW8y"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526962638269	Marionette	INFO	Listening on port 35178
+1526962638656	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526962639876	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/%E6%B5%8F%E8%A7%88%E5%99%A8/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/%E6%B5%8F%E8%A7%88%E5%99%A8/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+GeckoDriver.prototype.quit()@driver.js:3300
+despatch()@server.js:293
+execute()@server.js:267
+onPacket/<()@server.js:242
+onPacket()@server.js:241
+_onJSONObjectReady/<()@transport.js:500
+[Child 48788, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 48788,[Parent 1952, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6468, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6468, Chrome_Chil[Parent 1952, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526962873834	geckodriver	INFO	geckodriver 0.20.1
+1526962873859	geckodriver	INFO	Listening on 127.0.0.1:35383
+1526962876859	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.fvdDsBEkCo42"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526962880934	Marionette	INFO	Listening on port 35391
+1526962881237	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526962882355	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/%E6%B5%8F%E8%A7%88%E5%99%A8/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/%E6%B5%8F%E8%A7%88%E5%99%A8/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+GeckoDriver.prototype.quit()@driver.js:3300
+despatch()@server.js:293
+execute()@server.js:267
+onPacket/<()@server.js:242
+onPacket()@server.js:241
+_onJSONObjectReady/<()@transport.js:500
+[Parent 47552, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/bu*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526963229042	geckodriver	INFO	geckodriver 0.20.1
+1526963229057	geckodriver	INFO	Listening on 127.0.0.1:35447
+1526963232085	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.jNfbrJ35wzwQ"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526963236546	Marionette	INFO	Listening on port 35455
+1526963236578	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526963237983	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/%E6%B5%8F%E8%A7%88%E5%99%A8/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/%E6%B5%8F%E8%A7%88%E5%99%A8/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+GeckoDriver.prototype.quit()@driver.js:3300
+despatch()@server.js:293
+execute()@server.js:267
+onPacket/<()@server.js:242
+onPacket()@server.js:241
+_onJSONObjectReady/<()@transport.js:500
+[Child 49000, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49000, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 48436, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 48436[Parent 48520, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 48468, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 48468, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526963559193	geckodriver	INFO	geckodriver 0.20.1
+1526963559213	geckodriver	INFO	Listening on 127.0.0.1:35518
+1526963562226	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.kPrthaF6I6ft"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526963566860	Marionette	INFO	Listening on port 35526
+1526963567962	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript error: about:blank, line 1: TypeError: window.parent.UE is undefined
+[Child 49236, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49236, Chrome_ChildThread] WARNING: pipe error: 109: file z:[C[Parent 39560, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526963788533	geckodriver	INFO	geckodriver 0.20.1
+1526963788557	geckodriver	INFO	Listening on 127.0.0.1:35750
+1526963791595	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.cvgrMdkLxU7O"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526963796400	Marionette	INFO	Listening on port 35759
+1526963797135	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript error: about:blank, line 1: TypeError: window.parent.UE is undefined
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+[Parent 49280, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 48804, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 48804, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49720, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49720, Chrome_Chil[Parent 49280, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526963908151	geckodriver	INFO	geckodriver 0.20.1
+1526963908173	geckodriver	INFO	Listening on 127.0.0.1:35949
+1526963911214	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.nuvbJI2Rr3h9"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526963916124	Marionette	INFO	Listening on port 35958
+1526963916913	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+[Child 48136, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 48136, Chrome_ChildThread] WA[Parent 49696, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526964529186	geckodriver	INFO	geckodriver 0.20.1
+1526964529204	geckodriver	INFO	Listening on 127.0.0.1:36228
+1526964532222	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.A4DSZf77Fm8W"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526964535835	Marionette	INFO	Listening on port 36236
+1526964535957	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+[Child 49360, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49360, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 47796, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 47796, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526964665148	geckodriver	INFO	geckodriver 0.20.1
+1526964665165	geckodriver	INFO	Listening on 127.0.0.1:36441
+1526964668199	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.2LWyigod1ecX"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526964672581	Marionette	INFO	Listening on port 36449
+1526964673624	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+[Child 50560, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 35556, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526964868034	geckodriver	INFO	geckodriver 0.20.1
+1526964868051	geckodriver	INFO	Listening on 127.0.0.1:36629
+1526964871076	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.71euOIY60fI7"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526964876074	Marionette	INFO	Listening on port 36637
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526964876397	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+[Child 47044, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 47044, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 50868, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526965027417	geckodriver	INFO	geckodriver 0.20.1
+1526965027442	geckodriver	INFO	Listening on 127.0.0.1:36825
+1526965030464	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.7J5tmqOlgolc"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526965033773	Marionette	INFO	Listening on port 36833
+1526965034295	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+[Child 47236, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 47236, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 50476, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526969213871	geckodriver	INFO	geckodriver 0.20.1
+1526969213934	geckodriver	INFO	Listening on 127.0.0.1:43180
+1526969216978	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.aLmNUyRNAGA6"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526969221574	Marionette	INFO	Listening on port 43188
+1526969222270	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+[Parent 48420, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 51664, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 48420, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 48420, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526969440372	geckodriver	INFO	geckodriver 0.20.1
+1526969440385	geckodriver	INFO	Listening on 127.0.0.1:43619
+1526969443434	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.nNAd1Ldcx76F"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526969448122	Marionette	INFO	Listening on port 43627
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526969448961	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+[Child 49640, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49640, Chrome_ChildTh[Parent 36344, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526969875837	geckodriver	INFO	geckodriver 0.20.1
+1526969875902	geckodriver	INFO	Listening on 127.0.0.1:44707
+1526969878780	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.WaqfWNVbIFoY"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526969882874	Marionette	INFO	Listening on port 44715
+1526969883151	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript error: about:blank, line 1: TypeError: window.parent.UE is undefined
+[Child 48416, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 46096, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 48596, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1526972860574	geckodriver	INFO	geckodriver 0.20.1
+1526972860594	geckodriver	INFO	Listening on 127.0.0.1:49946
+1526972863604	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.nppS25erzTzF"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526972867333	Marionette	INFO	Listening on port 49962
+1526972867614	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+1526977119621	geckodriver	INFO	geckodriver 0.20.1
+1526977119637	geckodriver	INFO	Listening on 127.0.0.1:54547
+1526977122692	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.sFmGZXsc5bv8"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526977128394	Marionette	INFO	Listening on port 54555
+1526977128452	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+1526982448450	geckodriver	INFO	geckodriver 0.20.1
+1526982448505	geckodriver	INFO	Listening on 127.0.0.1:2482
+1526982451084	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-headless" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.7cFs9quBvhCY"
+*** You are running in headless mode.
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526982457500	Marionette	INFO	Listening on port 2490
+1526982457939	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+1526982611102	geckodriver	INFO	geckodriver 0.20.1
+1526982611113	geckodriver	INFO	Listening on 127.0.0.1:3121
+1526982614008	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-headless" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.ztUaI2DgzQRs"
+*** You are running in headless mode.
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526982635955	geckodriver	INFO	geckodriver 0.20.1
+1526982635976	geckodriver	INFO	Listening on 127.0.0.1:3142
+1526982638999	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-headless" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.UYxLmN4aqfeY"
+*** You are running in headless mode.
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526982644213	Marionette	INFO	Listening on port 3150
+1526982644788	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+1526986608809	geckodriver	INFO	geckodriver 0.20.1
+1526986608834	geckodriver	INFO	Listening on 127.0.0.1:14631
+1526986611873	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-headless" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.3D0g8InMKrPG"
+*** You are running in headless mode.
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526986615402	Marionette	INFO	Listening on port 14639
+1526986615749	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+[Parent 51008, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 32644, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 32644, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ip[Parent 51008, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 55200, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 55200, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 51008, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1526987014739	geckodriver	INFO	geckodriver 0.20.1
+1526987014755	geckodriver	INFO	Listening on 127.0.0.1:16149
+1526987017735	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-headless" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.IkpG9vZnMPCi"
+*** You are running in headless mode.
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1526987022328	Marionette	INFO	Listening on port 16157
+1526987023333	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript error: http://baike.baidu.com/cms/global/cms_editor_config.js?r=1526987759, line 1: SyntaxError: expected expression, got '<'
+1527002247872	geckodriver	INFO	geckodriver 0.20.1
+1527002247903	geckodriver	INFO	Listening on 127.0.0.1:43895
+1527002250851	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.lPM1eF5SsQez"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1527002255968	Marionette	INFO	Listening on port 43903
+1527002256346	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+1527035712050	geckodriver	INFO	geckodriver 0.20.1
+1527035712124	geckodriver	INFO	Listening on 127.0.0.1:47022
+1527035715030	mozrunner::runner	INFO	Running command: "E:\\浏览器\\火狐浏览器\\firefox.exe" "-marionette" "-profile" "C:\\Users\\41735\\AppData\\Local\\Temp\\rust_mozprofile.Tcj0FyWPRkzz"
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\41735\AppData\Local\openvr\openvrpaths.vrpath
+1527035720535	Marionette	INFO	Listening on port 47030
+1527035720929	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/common/pkg/framework_b9aa0153.js, line 52: unreachable code after return statement
+JavaScript warning: http://baike.baidu.com/static/usercenter/js/ui/enctip/js/enctip.js?t=bugfix, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/baselib_b22b9d4c.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/pkg/pagectrl_5e1561a4.js, line 1: unreachable code after return statement
+JavaScript warning: http://baike.bdimg.com/static/editor/ui/newedithelper/newedithelper_886b4f8e.js, line 1: unreachable code after return statement

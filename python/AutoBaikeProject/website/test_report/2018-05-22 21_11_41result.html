@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>百科查询报告</title>
+    <meta name="generator" content="BSTestRunner 0.8.4"/>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    
+<style type="text/css" media="screen">
+
+/* -- css div popup ------------------------------------------------------------------------ */
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #99CCFF;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 10pt;
+    width: 500px;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+
+#show_detail_line .label {
+    font-size: 85%;
+    cursor: pointer;
+}
+
+#show_detail_line {
+    margin: 2em auto 1em auto;
+}
+
+#total_row  { font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+</style>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class="container">
+    <div class='heading'>
+<h1>百科查询报告</h1>
+<p><strong>Start Time:</strong> 2018-05-22 21:11:42</p>
+<p><strong>Duration:</strong> 0:14:09.349089</p>
+<p><strong>Status:</strong> <span class="text text-warning">Error <strong>1</strong></span></p>
+
+<p class='description'></p>
+</div>
+
+
+    
+<p id='show_detail_line'>
+<span class="label label-primary" onclick="showCase(0)">Summary</span>
+<span class="label label-danger" onclick="showCase(1)">Failed</span>
+<span class="label label-default" onclick="showCase(2)">All</span>
+</p>
+<table id='result_table' class="table">
+    <thead>
+        <tr id='header_row'>
+            <th>Test Group/Test case</td>
+            <th>Count</td>
+            <th>Pass</td>
+            <th>Fail</td>
+            <th>Error</td>
+            <th>View</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+<tr class='text text-warning'>
+    <td>search_baike.LoginTest</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='ft1.1' class='text text-success'>
+    <td class='text text-warning'><div class='testcase'>test_login</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: E:\Anaconda3\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+测试的页面是 https://passport.baidu.com/v2/?login
+https://baike.baidu.com/historylist/%E5%91%A8%E5%AE%89%E6%A2%85%E7%BB%99%E6%B0%B8%E5%85%AD%E5%85%B3%E4%BA%8E%E5%BD%92%E8%BF%98%E8%B0%B7%E5%AD%90%E7%9A%84%E4%BF%A1/22576818
+https://baike.baidu.com/historylist/%E5%91%A8%E5%AE%89%E6%A2%85%E7%BB%99%E6%B0%B8%E5%85%AD%E5%85%B3%E4%BA%8E%E5%BD%92%E8%BF%98%E8%B0%B7%E5%AD%90%E7%9A%84%E4%BF%A1/22576818
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48964', '周安梅给永六关于归还谷子的信', '22576818', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:11', '1']
+E:\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py:1009: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  "type. It should end with a `.png` extension", UserWarning)
+https://baike.baidu.com/historylist/%E7%BB%93%E5%A9%9A%E4%BB%8B%E7%BB%8D%E4%BF%A1/22576819
+https://baike.baidu.com/historylist/%E7%BB%93%E5%A9%9A%E4%BB%8B%E7%BB%8D%E4%BF%A1/22576819
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48965', '结婚介绍信', '22576819', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E6%94%BE%E8%A1%8C%E8%AF%81/22576820
+https://baike.baidu.com/historylist/%E6%94%BE%E8%A1%8C%E8%AF%81/22576820
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48966', '放行证', '22576820', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E9%87%8C%E4%BB%81%E5%AD%A6%E6%A0%A1%E5%AD%A6%E7%94%9F%E4%BD%BF%E7%94%A8%E7%9A%84%E8%AF%BE%E6%9C%AC/22576821
+https://baike.baidu.com/historylist/%E9%87%8C%E4%BB%81%E5%AD%A6%E6%A0%A1%E5%AD%A6%E7%94%9F%E4%BD%BF%E7%94%A8%E7%9A%84%E8%AF%BE%E6%9C%AC/22576821
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48967', '里仁学校学生使用的课本', '22576821', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E6%84%8F%E5%A4%A7%E5%88%A9%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576822
+https://baike.baidu.com/historylist/%E6%84%8F%E5%A4%A7%E5%88%A9%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576822
+2018-05-11 19:09 查看 _沙漠小水珠 内容扩充  
+2018-05-11 17:52 查看 _沙漠小水珠 创建词条  
+['48968', '意大利国家公园体系', '22576822', '2018-05-11 17:52', '_沙漠小水珠', '创建词条', '2018-05-11 19:09', '_沙漠小水珠', '', '2018-05-22 21:12', '2']
+https://baike.baidu.com/historylist/%E9%A9%AC%E5%85%8B%E6%80%9D%E6%9D%BF%E7%94%BB%E5%83%8F/22576823
+https://baike.baidu.com/historylist/%E9%A9%AC%E5%85%8B%E6%80%9D%E6%9D%BF%E7%94%BB%E5%83%8F/22576823
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48969', '马克思板画像', '22576823', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E9%83%A8%E9%98%9F%E6%B2%BB%E7%97%85%E7%96%97%E4%BC%A4%E7%94%A8%E8%BF%87%E7%9A%84%E8%8D%AF%E4%B9%A6/22576824
+https://baike.baidu.com/historylist/%E9%83%A8%E9%98%9F%E6%B2%BB%E7%97%85%E7%96%97%E4%BC%A4%E7%94%A8%E8%BF%87%E7%9A%84%E8%8D%AF%E4%B9%A6/22576824
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48970', '部队治病疗伤用过的药书', '22576824', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E6%B2%B9%E7%94%BB%E4%B8%8E%E6%B9%98%E7%BB%A3%E3%80%8A%E8%BE%89%E7%85%8C%E3%80%8B/22576825
+https://baike.baidu.com/historylist/%E6%B2%B9%E7%94%BB%E4%B8%8E%E6%B9%98%E7%BB%A3%E3%80%8A%E8%BE%89%E7%85%8C%E3%80%8B/22576825
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48971', '油画与湘绣《辉煌》', '22576825', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E6%B8%B8%E5%87%BB%E9%98%9F%E6%A2%AD%E6%A0%87/22576826
+https://baike.baidu.com/historylist/%E6%B8%B8%E5%87%BB%E9%98%9F%E6%A2%AD%E6%A0%87/22576826
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48972', '游击队梭标', '22576826', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E7%A7%8B%E6%94%B6%E8%B5%B7%E4%B9%89%E9%83%A8%E9%98%9F%E6%A2%AD%E6%A0%87/22576827
+https://baike.baidu.com/historylist/%E7%A7%8B%E6%94%B6%E8%B5%B7%E4%B9%89%E9%83%A8%E9%98%9F%E6%A2%AD%E6%A0%87/22576827
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48973', '秋收起义部队梭标', '22576827', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E9%99%88%E5%9C%A3%E5%85%83%E7%94%A8%E8%BF%87%E7%9A%84%E5%9C%9F%E6%89%8B%E7%82%AE/22576828
+https://baike.baidu.com/historylist/%E9%99%88%E5%9C%A3%E5%85%83%E7%94%A8%E8%BF%87%E7%9A%84%E5%9C%9F%E6%89%8B%E7%82%AE/22576828
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48974', '陈圣元用过的土手炮', '22576828', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E9%BB%84%E9%9A%86%E4%BB%81%E7%94%A8%E8%BF%87%E5%9C%9F%E6%89%8B%E7%82%AE/22576829
+https://baike.baidu.com/historylist/%E9%BB%84%E9%9A%86%E4%BB%81%E7%94%A8%E8%BF%87%E5%9C%9F%E6%89%8B%E7%82%AE/22576829
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48975', '黄隆仁用过土手炮', '22576829', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E5%AE%9C%E6%98%A5%E5%B7%A5%E5%86%9C%E5%85%B5%E9%93%B6%E8%A1%8C%E8%B4%B0%E8%A7%92%E7%BA%B8%E5%B8%81/22576830
+https://baike.baidu.com/historylist/%E5%AE%9C%E6%98%A5%E5%B7%A5%E5%86%9C%E5%85%B5%E9%93%B6%E8%A1%8C%E8%B4%B0%E8%A7%92%E7%BA%B8%E5%B8%81/22576830
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48976', '宜春工农兵银行贰角纸币', '22576830', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E7%83%88%E5%A3%AB%E5%BC%A0%E5%85%86%E6%98%8E%E7%94%A8%E8%BF%87%E7%9A%84%E7%8C%AA%E5%B1%8E%E7%82%AE/22576831
+https://baike.baidu.com/historylist/%E7%83%88%E5%A3%AB%E5%BC%A0%E5%85%86%E6%98%8E%E7%94%A8%E8%BF%87%E7%9A%84%E7%8C%AA%E5%B1%8E%E7%82%AE/22576831
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48977', '烈士张兆明用过的猪屎炮', '22576831', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E6%9D%8E%E5%BA%86%E5%96%9C%E7%94%A8%E8%BF%87%E7%9A%84%E7%9F%AD%E6%A3%8D%E7%82%AE/22576832
+https://baike.baidu.com/historylist/%E6%9D%8E%E5%BA%86%E5%96%9C%E7%94%A8%E8%BF%87%E7%9A%84%E7%9F%AD%E6%A3%8D%E7%82%AE/22576832
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48978', '李庆喜用过的短棍炮', '22576832', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E5%BC%A0%E5%AE%89%E4%BB%98%E7%94%A8%E8%BF%87%E7%9A%84%E7%9F%AD%E6%A3%92%E7%82%AE/22576833
+https://baike.baidu.com/historylist/%E5%BC%A0%E5%AE%89%E4%BB%98%E7%94%A8%E8%BF%87%E7%9A%84%E7%9F%AD%E6%A3%92%E7%82%AE/22576833
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48979', '张安付用过的短棒炮', '22576833', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E7%BA%A2%E5%86%9B%E6%B8%B8%E5%87%BB%E9%98%9F%E7%94%A8%E8%BF%87%E7%9A%84%E9%A9%AC%E5%88%80/22576834
+https://baike.baidu.com/historylist/%E7%BA%A2%E5%86%9B%E6%B8%B8%E5%87%BB%E9%98%9F%E7%94%A8%E8%BF%87%E7%9A%84%E9%A9%AC%E5%88%80/22576834
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48980', '红军游击队用过的马刀', '22576834', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:12', '1']
+https://baike.baidu.com/historylist/%E5%AE%BD%E5%B8%A6%E9%80%9A%E7%94%A8%E6%8E%A5%E5%85%A5/22576835
+https://baike.baidu.com/historylist/%E5%AE%BD%E5%B8%A6%E9%80%9A%E7%94%A8%E6%8E%A5%E5%85%A5/22576835
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:52 查看 揩邮兆矝牙 创建词条  
+['48981', '宽带通用接入', '22576835', '2018-05-11 17:52', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:12', '2']
+https://baike.baidu.com/historylist/%E8%83%A1%E5%AE%B6%E5%8E%9A%E7%94%A8%E8%BF%87%E7%9A%84%E5%8F%8C%E9%9D%A2%E5%89%91/22576836
+https://baike.baidu.com/historylist/%E8%83%A1%E5%AE%B6%E5%8E%9A%E7%94%A8%E8%BF%87%E7%9A%84%E5%8F%8C%E9%9D%A2%E5%89%91/22576836
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48982', '胡家厚用过的双面剑', '22576836', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E7%8E%8B%E6%99%8B%E7%AB%A0%E6%8D%A1%E5%88%B0%E7%9A%84%E6%A2%AD%E6%A0%87/22576837
+https://baike.baidu.com/historylist/%E7%8E%8B%E6%99%8B%E7%AB%A0%E6%8D%A1%E5%88%B0%E7%9A%84%E6%A2%AD%E6%A0%87/22576837
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48983', '王晋章捡到的梭标', '22576837', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E7%BA%A2%E5%86%9B%E9%81%97%E7%95%99%E4%B8%8B%E6%9D%A5%E7%9A%84%E7%8E%AF%E9%A6%96%E9%93%81%E5%8C%95%E9%A6%96/22576838
+https://baike.baidu.com/historylist/%E7%BA%A2%E5%86%9B%E9%81%97%E7%95%99%E4%B8%8B%E6%9D%A5%E7%9A%84%E7%8E%AF%E9%A6%96%E9%93%81%E5%8C%95%E9%A6%96/22576838
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48984', '红军遗留下来的环首铁匕首', '22576838', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E7%BA%A2%E5%86%9B%E7%95%99%E4%B8%8B%E7%9A%84%E9%93%9C%E7%93%A2/22576839
+https://baike.baidu.com/historylist/%E7%BA%A2%E5%86%9B%E7%95%99%E4%B8%8B%E7%9A%84%E9%93%9C%E7%93%A2/22576839
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48985', '红军留下的铜瓢', '22576839', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E9%95%BF%E9%BE%99%E7%82%AE/22576840
+https://baike.baidu.com/historylist/%E9%95%BF%E9%BE%99%E7%82%AE/22576840
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48986', '长龙炮', '22576840', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E5%8F%8C%E7%AD%92%E6%89%8B%E6%9E%AA/22576841
+https://baike.baidu.com/historylist/%E5%8F%8C%E7%AD%92%E6%89%8B%E6%9E%AA/22576841
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48987', '双筒手枪', '22576841', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E7%8E%AF%E9%A6%96%E9%93%81%E5%8C%95%E9%A6%96/22576842
+https://baike.baidu.com/historylist/%E7%8E%AF%E9%A6%96%E9%93%81%E5%8C%95%E9%A6%96/22576842
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48988', '环首铁匕首', '22576842', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E9%93%9D%E8%B4%A8%E8%8C%B6%E7%BC%B8/22576843
+https://baike.baidu.com/historylist/%E9%93%9D%E8%B4%A8%E8%8C%B6%E7%BC%B8/22576843
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48989', '铝质茶缸', '22576843', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E8%A5%BF%E7%8F%AD%E7%89%99%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576844
+https://baike.baidu.com/historylist/%E8%A5%BF%E7%8F%AD%E7%89%99%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576844
+2018-05-11 17:52 查看 _沙漠小水珠 创建词条  
+['48990', '西班牙国家公园体系', '22576844', '2018-05-11 17:52', '_沙漠小水珠', '创建词条', '2018-05-11 17:52', '_沙漠小水珠', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E8%8D%B7%E5%8F%B6%E7%81%AF%E6%9E%B6/22576845
+https://baike.baidu.com/historylist/%E8%8D%B7%E5%8F%B6%E7%81%AF%E6%9E%B6/22576845
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48991', '荷叶灯架', '22576845', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E9%9D%9E%E6%B4%B2%E8%B1%B9%E3%80%8B/22576846
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E9%9D%9E%E6%B4%B2%E8%B1%B9%E3%80%8B/22576846
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48992', '湘绣《非洲豹》', '22576846', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%93%E5%A7%BF%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22576847
+https://baike.baidu.com/historylist/%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%93%E5%A7%BF%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22576847
+2018-05-11 17:52 查看 wzdsxhq 创建词条  
+['48993', '内蒙古卓姿科技有限公司', '22576847', '2018-05-11 17:52', 'wzdsxhq', '创建词条', '2018-05-11 17:52', 'wzdsxhq', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E6%B2%99%E6%BC%A0%E6%BC%86%E9%A3%9E%E6%9D%A5%E5%B3%B0/22576848
+https://baike.baidu.com/historylist/%E6%B2%99%E6%BC%A0%E6%BC%86%E9%A3%9E%E6%9D%A5%E5%B3%B0/22576848
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48994', '沙漠漆飞来峰', '22576848', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E8%8D%B7%E8%8A%B1%E7%9F%B3%E6%B8%85%E8%B6%A3/22576849
+https://baike.baidu.com/historylist/%E8%8D%B7%E8%8A%B1%E7%9F%B3%E6%B8%85%E8%B6%A3/22576849
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48995', '荷花石清趣', '22576849', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E9%BB%84%E8%9C%A1%E7%9F%B3%E5%8D%A7%E8%99%8E/22576850
+https://baike.baidu.com/historylist/%E9%BB%84%E8%9C%A1%E7%9F%B3%E5%8D%A7%E8%99%8E/22576850
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48996', '黄蜡石卧虎', '22576850', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E8%8B%B1%E7%9F%B3%E5%88%AB%E6%9C%89%E6%B4%9E%E5%A4%A9/22576851
+https://baike.baidu.com/historylist/%E8%8B%B1%E7%9F%B3%E5%88%AB%E6%9C%89%E6%B4%9E%E5%A4%A9/22576851
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48997', '英石别有洞天', '22576851', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:13', '1']
+https://baike.baidu.com/historylist/%E7%94%A8%E6%88%B7%E7%95%8C%E5%86%85%E7%BD%91/22576852
+https://baike.baidu.com/historylist/%E7%94%A8%E6%88%B7%E7%95%8C%E5%86%85%E7%BD%91/22576852
+2018-05-12 19:36 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:52 查看 揩邮兆矝牙 创建词条  
+['48998', '用户界内网', '22576852', '2018-05-11 17:52', '揩邮兆矝牙', '创建词条', '2018-05-12 19:36', '揩邮兆矝牙', '', '2018-05-22 21:13', '2']
+https://baike.baidu.com/historylist/%E5%A4%AA%E6%B9%96%E7%9F%B3%E6%B1%9F%E8%8B%8F%E9%A2%86%E8%A2%96/22576853
+https://baike.baidu.com/historylist/%E5%A4%AA%E6%B9%96%E7%9F%B3%E6%B1%9F%E8%8B%8F%E9%A2%86%E8%A2%96/22576853
+2018-05-11 17:52 查看 w_ou 创建词条  
+['48999', '太湖石江苏领袖', '22576853', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E7%A1%85%E5%8C%96%E6%9C%A8%E6%96%B0%E7%96%86%E7%8E%89%E6%9F%B1/22576854
+https://baike.baidu.com/historylist/%E7%A1%85%E5%8C%96%E6%9C%A8%E6%96%B0%E7%96%86%E7%8E%89%E6%9F%B1/22576854
+2018-05-11 17:52 查看 w_ou 创建词条  
+['49000', '硅化木新疆玉柱', '22576854', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%8B%AE%E5%AD%90%E6%A0%93%E9%A9%AC%E6%A1%A9/22576855
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%8B%AE%E5%AD%90%E6%A0%93%E9%A9%AC%E6%A1%A9/22576855
+2018-05-11 17:52 查看 w_ou 创建词条  
+['49001', '清代狮子栓马桩', '22576855', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E6%81%A9%E8%8D%A3%E7%9F%B3%E7%A2%91/22576856
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E6%81%A9%E8%8D%A3%E7%9F%B3%E7%A2%91/22576856
+2018-05-11 17:52 查看 w_ou 创建词条  
+['49002', '清代恩荣石碑', '22576856', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E5%8F%A4%E7%94%9F%E7%9F%B3%E7%94%BB/22576857
+https://baike.baidu.com/historylist/%E5%8F%A4%E7%94%9F%E7%9F%B3%E7%94%BB/22576857
+2018-05-11 17:52 查看 w_ou 创建词条  
+['49003', '古生石画', '22576857', '2018-05-11 17:52', 'w_ou', '创建词条', '2018-05-11 17:52', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E4%B8%8A%E9%A9%AC%E7%9F%B3/22576858
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E4%B8%8A%E9%A9%AC%E7%9F%B3/22576858
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49004', '清代上马石', '22576858', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E7%BA%A2%E7%8E%9B%E7%91%99%E9%94%A6%E4%B8%8A%E6%B7%BB%E8%8A%B1/22576859
+https://baike.baidu.com/historylist/%E7%BA%A2%E7%8E%9B%E7%91%99%E9%94%A6%E4%B8%8A%E6%B7%BB%E8%8A%B1/22576859
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49005', '红玛瑙锦上添花', '22576859', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576860
+https://baike.baidu.com/historylist/%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576860
+2018-05-11 17:53 查看 _沙漠小水珠 创建词条  
+['49006', '墨西哥国家公园体系', '22576860', '2018-05-11 17:53', '_沙漠小水珠', '创建词条', '2018-05-11 17:53', '_沙漠小水珠', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E5%BD%A9%E7%8E%89%E5%A4%A7%E6%BC%A0%E9%A3%8E/22576861
+https://baike.baidu.com/historylist/%E5%BD%A9%E7%8E%89%E5%A4%A7%E6%BC%A0%E9%A3%8E/22576861
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49007', '彩玉大漠风', '22576861', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E7%AB%B9%E5%8F%B6%E7%9F%B3%E7%AB%B9%E6%9E%97/22576862
+https://baike.baidu.com/historylist/%E7%AB%B9%E5%8F%B6%E7%9F%B3%E7%AB%B9%E6%9E%97/22576862
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49008', '竹叶石竹林', '22576862', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E6%A2%85%E8%8A%B1%E7%9F%B3%E7%8B%AC%E8%88%9E/22576863
+https://baike.baidu.com/historylist/%E6%A2%85%E8%8A%B1%E7%9F%B3%E7%8B%AC%E8%88%9E/22576863
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49009', '梅花石独舞', '22576863', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E9%BB%84%E6%B2%B3%E7%9F%B3%E5%BD%A9%E4%BA%91%E8%BF%BD%E6%9C%88/22576864
+https://baike.baidu.com/historylist/%E9%BB%84%E6%B2%B3%E7%9F%B3%E5%BD%A9%E4%BA%91%E8%BF%BD%E6%9C%88/22576864
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49010', '黄河石彩云追月', '22576864', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E5%AE%8B%E4%BB%A3%E6%9C%A8%E9%9B%95%E4%BD%9B%E5%A4%B4%E5%83%8F/22576865
+https://baike.baidu.com/historylist/%E5%AE%8B%E4%BB%A3%E6%9C%A8%E9%9B%95%E4%BD%9B%E5%A4%B4%E5%83%8F/22576865
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49011', '宋代木雕佛头像', '22576865', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E5%8D%8E%E5%B1%B1%E5%9B%BD%E7%94%BB%E7%9F%B3/22576866
+https://baike.baidu.com/historylist/%E5%8D%8E%E5%B1%B1%E5%9B%BD%E7%94%BB%E7%9F%B3/22576866
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49012', '华山国画石', '22576866', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E5%85%89%E7%BA%A4%E7%94%A8%E6%88%B7%E7%8E%AF%E8%B7%AF/22576867
+https://baike.baidu.com/historylist/%E5%85%89%E7%BA%A4%E7%94%A8%E6%88%B7%E7%8E%AF%E8%B7%AF/22576867
+2018-05-12 19:36 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:53 查看 揩邮兆矝牙 创建词条  
+['49013', '光纤用户环路', '22576867', '2018-05-11 17:53', '揩邮兆矝牙', '创建词条', '2018-05-12 19:36', '揩邮兆矝牙', '', '2018-05-22 21:14', '2']
+https://baike.baidu.com/historylist/%E9%9A%8B%E5%94%90%E7%9F%B3%E5%88%BB%E5%9F%8E%E9%97%A8%E6%A8%A1%E5%9E%8B/22576868
+https://baike.baidu.com/historylist/%E9%9A%8B%E5%94%90%E7%9F%B3%E5%88%BB%E5%9F%8E%E9%97%A8%E6%A8%A1%E5%9E%8B/22576868
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49014', '隋唐石刻城门模型', '22576868', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:14', '1']
+https://baike.baidu.com/historylist/%E7%BF%94%E9%BE%99%E5%8D%9A%E5%A4%A9/22576869
+https://baike.baidu.com/historylist/%E7%BF%94%E9%BE%99%E5%8D%9A%E5%A4%A9/22576869
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49015', '翔龙博天', '22576869', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%9F%B3%E7%8B%AE/22576870
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%9F%B3%E7%8B%AE/22576870
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49016', '清代石狮', '22576870', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E5%8F%8C%E7%8B%AE%E9%A6%99%E7%82%89/22576871
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E5%8F%8C%E7%8B%AE%E9%A6%99%E7%82%89/22576871
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49017', '清代双狮香炉', '22576871', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%9F%B3%E5%88%BB%E5%9C%A3%E6%97%A8/22576872
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%9F%B3%E5%88%BB%E5%9C%A3%E6%97%A8/22576872
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49018', '清代石刻圣旨', '22576872', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E4%BA%94%E4%BB%A3%E5%B0%8F%E7%8B%AE%E5%AD%90/22576873
+https://baike.baidu.com/historylist/%E4%BA%94%E4%BB%A3%E5%B0%8F%E7%8B%AE%E5%AD%90/22576873
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49019', '五代小狮子', '22576873', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E6%A0%93%E9%A9%AC%E6%A1%A9/22576874
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E6%A0%93%E9%A9%AC%E6%A1%A9/22576874
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49020', '清代栓马桩', '22576874', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E4%BB%A3%E4%BB%95%E5%A5%B3%E5%83%8F/22576875
+https://baike.baidu.com/historylist/%E5%94%90%E4%BB%A3%E4%BB%95%E5%A5%B3%E5%83%8F/22576875
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49021', '唐代仕女像', '22576875', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E7%91%9E%E5%85%B8%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576876
+https://baike.baidu.com/historylist/%E7%91%9E%E5%85%B8%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576876
+2018-05-11 19:09 查看 _沙漠小水珠 内容扩充  
+2018-05-11 17:53 查看 _沙漠小水珠 创建词条  
+['49022', '瑞典国家公园体系', '22576876', '2018-05-11 17:53', '_沙漠小水珠', '创建词条', '2018-05-11 19:09', '_沙漠小水珠', '', '2018-05-22 21:15', '2']
+https://baike.baidu.com/historylist/%E5%AE%8B%E4%BB%A3%E7%9F%B3%E7%BC%B8/22576877
+https://baike.baidu.com/historylist/%E5%AE%8B%E4%BB%A3%E7%9F%B3%E7%BC%B8/22576877
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49023', '宋代石缸', '22576877', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%9F%B3%E5%88%BB%E2%80%9C%E8%8C%B6%E7%9F%B3%E2%80%9D/22576878
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%9F%B3%E5%88%BB%E2%80%9C%E8%8C%B6%E7%9F%B3%E2%80%9D/22576878
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49024', '清代石刻“茶石”', '22576878', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%89%A1%E4%B8%B9%E5%8E%9F%E7%9F%B3/22576879
+https://baike.baidu.com/historylist/%E6%B8%85%E4%BB%A3%E7%89%A1%E4%B8%B9%E5%8E%9F%E7%9F%B3/22576879
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49025', '清代牡丹原石', '22576879', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E7%BA%A2%E5%B1%B1C%E9%BE%99/22576880
+https://baike.baidu.com/historylist/%E7%BA%A2%E5%B1%B1C%E9%BE%99/22576880
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49026', '红山C龙', '22576880', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E4%BA%98%E5%8F%A4%E4%BA%AC%E5%9F%8E/22576881
+https://baike.baidu.com/historylist/%E4%BA%98%E5%8F%A4%E4%BA%AC%E5%9F%8E/22576881
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49027', '亘古京城', '22576881', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E7%94%A8%E6%88%B7%E7%94%B5%E8%AF%9D%E5%B0%8F%E4%BA%A4%E6%8D%A2%E6%9C%BA/22576882
+https://baike.baidu.com/historylist/%E7%94%A8%E6%88%B7%E7%94%B5%E8%AF%9D%E5%B0%8F%E4%BA%A4%E6%8D%A2%E6%9C%BA/22576882
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:53 查看 揩邮兆矝牙 创建词条  
+['49028', '用户电话小交换机', '22576882', '2018-05-11 17:53', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:15', '2']
+https://baike.baidu.com/historylist/%E5%A4%A7%E5%94%90%E7%AC%AC%E4%B8%80%E8%8A%B1/22576883
+https://baike.baidu.com/historylist/%E5%A4%A7%E5%94%90%E7%AC%AC%E4%B8%80%E8%8A%B1/22576883
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49029', '大唐第一花', '22576883', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E5%BC%80%E5%9B%BD%E5%A4%A7%E5%85%B8%E3%80%8B%E6%AF%9B%E4%B8%BB%E5%B8%AD%E7%BB%A3%E5%83%8F/22576884
+https://baike.baidu.com/historylist/%E3%80%8A%E5%BC%80%E5%9B%BD%E5%A4%A7%E5%85%B8%E3%80%8B%E6%AF%9B%E4%B8%BB%E5%B8%AD%E7%BB%A3%E5%83%8F/22576884
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49030', '《开国大典》毛主席绣像', '22576884', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E7%A7%AF%E4%BB%A3%E4%BC%9A%E6%97%85%E8%A1%8C%E8%A2%8B/22576885
+https://baike.baidu.com/historylist/%E7%A7%AF%E4%BB%A3%E4%BC%9A%E6%97%85%E8%A1%8C%E8%A2%8B/22576885
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49031', '积代会旅行袋', '22576885', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:15', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%99%A8%E9%A3%9E%E3%80%8B/22576886
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%99%A8%E9%A3%9E%E3%80%8B/22576886
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49032', '湘绣《晨飞》', '22576886', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E9%98%BF%E6%A0%B9%E5%BB%B7%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576887
+https://baike.baidu.com/historylist/%E9%98%BF%E6%A0%B9%E5%BB%B7%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576887
+2018-05-11 17:53 查看 _沙漠小水珠 创建词条  
+['49033', '阿根廷国家公园体系', '22576887', '2018-05-11 17:53', '_沙漠小水珠', '创建词条', '2018-05-11 17:53', '_沙漠小水珠', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E5%9B%9B%E7%89%9B%E5%9B%BE%E3%80%8B/22576888
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E5%9B%9B%E7%89%9B%E5%9B%BE%E3%80%8B/22576888
+2018-05-11 17:53 查看 w_ou 创建词条  
+['49034', '湘绣《四牛图》', '22576888', '2018-05-11 17:53', 'w_ou', '创建词条', '2018-05-11 17:53', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E2%80%9C%E5%BF%A0%E5%AD%97%E7%89%8C%E2%80%9D%20%E9%A5%B0%E4%BB%B6/22576889
+https://baike.baidu.com/historylist/%E2%80%9C%E5%BF%A0%E5%AD%97%E7%89%8C%E2%80%9D%20%E9%A5%B0%E4%BB%B6/22576889
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49035', '“忠字牌” 饰件', '22576889', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E5%8A%B3%E6%A8%A1%E7%BA%AA%E5%BF%B5%E6%AF%9B%E5%B7%BE/22576890
+https://baike.baidu.com/historylist/%E5%8A%B3%E6%A8%A1%E7%BA%AA%E5%BF%B5%E6%AF%9B%E5%B7%BE/22576890
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49036', '劳模纪念毛巾', '22576890', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E9%99%B6%E9%A5%AD%E7%BD%90/22576891
+https://baike.baidu.com/historylist/%E9%99%B6%E9%A5%AD%E7%BD%90/22576891
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49037', '陶饭罐', '22576891', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E8%BD%A6%E8%BD%BD%E5%BC%8F%E7%94%B5%E8%AF%9D%E4%BA%A4%E6%8D%A2%E6%9C%BA/22576892
+https://baike.baidu.com/historylist/%E8%BD%A6%E8%BD%BD%E5%BC%8F%E7%94%B5%E8%AF%9D%E4%BA%A4%E6%8D%A2%E6%9C%BA/22576892
+2018-05-11 17:54 查看 揩邮兆矝牙 创建词条  
+['49038', '车载式电话交换机', '22576892', '2018-05-11 17:54', '揩邮兆矝牙', '创建词条', '2018-05-11 17:54', '揩邮兆矝牙', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E5%A4%87%E6%88%98%E6%89%8B%E6%A6%B4%E5%BC%B9/22576893
+https://baike.baidu.com/historylist/%E5%A4%87%E6%88%98%E6%89%8B%E6%A6%B4%E5%BC%B9/22576893
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49039', '备战手榴弹', '22576893', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E6%89%A9%E7%93%B7%E8%84%B8%E7%9B%86/22576894
+https://baike.baidu.com/historylist/%E6%89%A9%E7%93%B7%E8%84%B8%E7%9B%86/22576894
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49040', '扩瓷脸盆', '22576894', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E6%96%B0%E8%A5%BF%E5%85%B0%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576895
+https://baike.baidu.com/historylist/%E6%96%B0%E8%A5%BF%E5%85%B0%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576895
+2018-05-11 17:54 查看 _沙漠小水珠 创建词条  
+['49041', '新西兰国家公园体系', '22576895', '2018-05-11 17:54', '_沙漠小水珠', '创建词条', '2018-05-11 17:54', '_沙漠小水珠', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E6%90%AA%E7%93%B7%E8%8C%B6%E6%9D%AF/22576896
+https://baike.baidu.com/historylist/%E6%90%AA%E7%93%B7%E8%8C%B6%E6%9D%AF/22576896
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49042', '搪瓷茶杯', '22576896', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E4%B8%8B%E4%B9%A1%E5%85%89%E8%8D%A3%E5%86%9B%E8%83%8C%E5%8C%85/22576897
+https://baike.baidu.com/historylist/%E4%B8%8B%E4%B9%A1%E5%85%89%E8%8D%A3%E5%86%9B%E8%83%8C%E5%8C%85/22576897
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49043', '下乡光荣军背包', '22576897', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E9%99%B6%E7%BD%90%E5%9D%9B/22576898
+https://baike.baidu.com/historylist/%E9%99%B6%E7%BD%90%E5%9D%9B/22576898
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49044', '陶罐坛', '22576898', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E7%94%A8%E6%88%B7%E7%8E%AF%E8%B7%AF/22576899
+https://baike.baidu.com/historylist/%E7%94%A8%E6%88%B7%E7%8E%AF%E8%B7%AF/22576899
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:54 查看 揩邮兆矝牙 创建词条  
+['49045', '用户环路', '22576899', '2018-05-11 17:54', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:16', '2']
+https://baike.baidu.com/historylist/%E6%94%AF%E8%BE%B9%E5%85%89%E8%8D%A3%E8%AF%81/22576900
+https://baike.baidu.com/historylist/%E6%94%AF%E8%BE%B9%E5%85%89%E8%8D%A3%E8%AF%81/22576900
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49046', '支边光荣证', '22576900', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%8D%A3%E7%BB%83%E5%9B%BE%E3%80%8B/22576901
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%8D%A3%E7%BB%83%E5%9B%BE%E3%80%8B/22576901
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49047', '湘绣《捣练图》', '22576901', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E6%AF%95%E4%B8%9A%E7%94%9F%E5%88%86%E9%85%8D%E8%AF%81%E6%98%8E%E4%B9%A6/22576902
+https://baike.baidu.com/historylist/%E6%AF%95%E4%B8%9A%E7%94%9F%E5%88%86%E9%85%8D%E8%AF%81%E6%98%8E%E4%B9%A6/22576902
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49048', '毕业生分配证明书', '22576902', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:16', '1']
+https://baike.baidu.com/historylist/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%9C%81%E7%AB%8B%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576903
+https://baike.baidu.com/historylist/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%9C%81%E7%AB%8B%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576903
+2018-05-11 17:54 查看 _沙漠小水珠 创建词条  
+['49049', '加拿大省立公园体系', '22576903', '2018-05-11 17:54', '_沙漠小水珠', '创建词条', '2018-05-11 17:54', '_沙漠小水珠', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E7%9F%A5%E8%AF%86%E9%9D%92%E5%B9%B4%E4%B8%8A%E5%B1%B1%E4%B8%8B%E4%B9%A1%E6%89%B9%E5%87%86%E4%B9%A6/22576904
+https://baike.baidu.com/historylist/%E7%9F%A5%E8%AF%86%E9%9D%92%E5%B9%B4%E4%B8%8A%E5%B1%B1%E4%B8%8B%E4%B9%A1%E6%89%B9%E5%87%86%E4%B9%A6/22576904
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49050', '知识青年上山下乡批准书', '22576904', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E5%8F%8C%E9%9D%A2%E7%BB%A3%E3%80%8A%E7%88%B1%E6%99%9A%E4%BA%AD%E3%80%8B/22576905
+https://baike.baidu.com/historylist/%E5%8F%8C%E9%9D%A2%E7%BB%A3%E3%80%8A%E7%88%B1%E6%99%9A%E4%BA%AD%E3%80%8B/22576905
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49051', '双面绣《爱晚亭》', '22576905', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E7%89%A7%E9%A9%AC%E5%9B%BE%E3%80%8B/22576906
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E7%89%A7%E9%A9%AC%E5%9B%BE%E3%80%8B/22576906
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49052', '湘绣《牧马图》', '22576906', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%AD%A6%E4%BE%A0%E5%8C%96%E5%AD%A6/22576907
+https://baike.baidu.com/historylist/%E6%AD%A6%E4%BE%A0%E5%8C%96%E5%AD%A6/22576907
+2018-05-10 22:07 查看 SH沙木 创建词条  
+['49053', '武侠化学', '22576907', '2018-05-10 22:07', 'SH沙木', '创建词条', '2018-05-10 22:07', 'SH沙木', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%95%B0%E5%AD%97%E5%A4%8D%E6%8E%A5%E8%AE%BE%E5%A4%87/22576908
+https://baike.baidu.com/historylist/%E6%95%B0%E5%AD%97%E5%A4%8D%E6%8E%A5%E8%AE%BE%E5%A4%87/22576908
+2018-05-11 17:54 查看 揩邮兆矝牙 创建词条  
+['49054', '数字复接设备', '22576908', '2018-05-11 17:54', '揩邮兆矝牙', '创建词条', '2018-05-11 17:54', '揩邮兆矝牙', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E9%A1%BE%E7%BB%A3%E6%B4%97%E9%A9%AC%E5%9B%BE%E3%80%8B/22576909
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E9%A1%BE%E7%BB%A3%E6%B4%97%E9%A9%AC%E5%9B%BE%E3%80%8B/22576909
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49055', '湘绣《顾绣洗马图》', '22576909', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E5%BC%A0%E5%9B%BD%E8%80%81%E8%A7%81%E6%98%8E%E7%9A%87%E3%80%8B/22576910
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E5%BC%A0%E5%9B%BD%E8%80%81%E8%A7%81%E6%98%8E%E7%9A%87%E3%80%8B/22576910
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49056', '湘绣《张国老见明皇》', '22576910', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E9%AB%98%E9%80%9F%E7%94%A8%E6%88%B7%E7%94%B5%E6%8A%A5%E7%BB%88%E7%AB%AF%E8%AE%BE%E5%A4%87/22576911
+https://baike.baidu.com/historylist/%E9%AB%98%E9%80%9F%E7%94%A8%E6%88%B7%E7%94%B5%E6%8A%A5%E7%BB%88%E7%AB%AF%E8%AE%BE%E5%A4%87/22576911
+2018-05-11 17:54 查看 揩邮兆矝牙 创建词条  
+['49057', '高速用户电报终端设备', '22576911', '2018-05-11 17:54', '揩邮兆矝牙', '创建词条', '2018-05-11 17:54', '揩邮兆矝牙', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%9D%BE%E9%B9%A4%E5%BB%B6%E5%B9%B4%E5%9B%BE%E3%80%8B/22576912
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%9D%BE%E9%B9%A4%E5%BB%B6%E5%B9%B4%E5%9B%BE%E3%80%8B/22576912
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49058', '湘绣《松鹤延年图》', '22576912', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E8%A1%8C%E6%97%85%E5%9B%BE%E3%80%8B/22576913
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E8%A1%8C%E6%97%85%E5%9B%BE%E3%80%8B/22576913
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49059', '湘绣《行旅图》', '22576913', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%98%A5%E4%B9%8B%E7%91%9E%E5%85%86%E5%9B%BE%E3%80%8B/22576914
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%98%A5%E4%B9%8B%E7%91%9E%E5%85%86%E5%9B%BE%E3%80%8B/22576914
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49060', '湘绣《春之瑞兆图》', '22576914', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%9D%BE%E9%B9%A4%E5%9B%BE%E3%80%8B/22576915
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E6%9D%BE%E9%B9%A4%E5%9B%BE%E3%80%8B/22576915
+2018-05-11 17:54 查看 w_ou 创建词条  
+['49061', '湘绣《松鹤图》', '22576915', '2018-05-11 17:54', 'w_ou', '创建词条', '2018-05-11 17:54', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E5%86%99%E6%84%8F%E7%89%A1%E4%B8%B9%E3%80%8B/22576916
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E5%86%99%E6%84%8F%E7%89%A1%E4%B8%B9%E3%80%8B/22576916
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49062', '湘绣《写意牡丹》', '22576916', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E8%8A%B1%E8%93%9D%E5%9B%BE%E3%80%8B/22576917
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E8%8A%B1%E8%93%9D%E5%9B%BE%E3%80%8B/22576917
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49063', '湘绣《花蓝图》', '22576917', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E5%BA%84%E5%AD%90%E6%A2%A6%E8%9D%B6%E3%80%8B/22576918
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E5%BA%84%E5%AD%90%E6%A2%A6%E8%9D%B6%E3%80%8B/22576918
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49064', '湘绣《庄子梦蝶》', '22576918', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:17', '1']
+https://baike.baidu.com/historylist/%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7%E7%94%B5%E6%8A%A5%E7%BB%88%E7%AB%AF%E8%AE%BE%E5%A4%87/22576919
+https://baike.baidu.com/historylist/%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7%E7%94%B5%E6%8A%A5%E7%BB%88%E7%AB%AF%E8%AE%BE%E5%A4%87/22576919
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:55 查看 揩邮兆矝牙 创建词条  
+['49065', '超级用户电报终端设备', '22576919', '2018-05-11 17:55', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:17', '2']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E4%B8%80%E8%B7%AF%E8%8D%A3%E5%8D%8E%E3%80%8B/22576920
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E4%B8%80%E8%B7%AF%E8%8D%A3%E5%8D%8E%E3%80%8B/22576920
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49066', '湘绣《一路荣华》', '22576920', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E7%BB%A3%E5%93%81%E3%80%8A%E9%A6%99%E4%BB%AA%E6%97%97%E3%80%8B/22576921
+https://baike.baidu.com/historylist/%E7%BB%A3%E5%93%81%E3%80%8A%E9%A6%99%E4%BB%AA%E6%97%97%E3%80%8B/22576921
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49067', '绣品《香仪旗》', '22576921', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E4%BF%9D%E5%AE%9A%E4%B8%AD%E6%B1%89%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22576922
+https://baike.baidu.com/historylist/%E4%BF%9D%E5%AE%9A%E4%B8%AD%E6%B1%89%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22576922
+2018-05-11 17:55 查看 巴图鲁啊哈哈 创建词条  
+['49068', '保定中汉房地产经纪有限公司', '22576922', '2018-05-11 17:55', '巴图鲁啊哈哈', '创建词条', '2018-05-11 17:55', '巴图鲁啊哈哈', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E8%A5%BF%E6%B4%B2%E6%9B%B2%E3%80%8B%E5%B1%80%E9%83%A8/22576923
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E3%80%8A%E8%A5%BF%E6%B4%B2%E6%9B%B2%E3%80%8B%E5%B1%80%E9%83%A8/22576923
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49069', '湘绣《西洲曲》局部', '22576923', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E6%97%8B%E8%BD%AC%E5%BC%8F%E6%89%AC%E8%B0%B7%E6%89%87%E8%BD%A6/22576924
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E6%97%8B%E8%BD%AC%E5%BC%8F%E6%89%AC%E8%B0%B7%E6%89%87%E8%BD%A6/22576924
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49070', '民国旋转式扬谷扇车', '22576924', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576925
+https://baike.baidu.com/historylist/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576925
+2018-05-11 17:55 查看 _沙漠小水珠 创建词条  
+['49071', '加拿大国家公园体系', '22576925', '2018-05-11 17:55', '_沙漠小水珠', '创建词条', '2018-05-11 17:55', '_沙漠小水珠', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E5%86%9C%E5%85%B7%E8%80%99/22576926
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E5%86%9C%E5%85%B7%E8%80%99/22576926
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49072', '民国农具耙', '22576926', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E6%9C%A8%E6%A6%A8%E6%9C%BA/22576927
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E6%9C%A8%E6%A6%A8%E6%9C%BA/22576927
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49073', '民国木榨机', '22576927', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%9F%B3%E7%A3%A8/22576928
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%9F%B3%E7%A3%A8/22576928
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49074', '民国石磨', '22576928', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%BA%A2%E9%A5%AD%E6%A1%B6/22576929
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%BA%A2%E9%A5%AD%E6%A1%B6/22576929
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49075', '民国红饭桶', '22576929', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E9%BE%99%E9%AA%A8%E6%B0%B4%E8%BD%A6/22576930
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E9%BE%99%E9%AA%A8%E6%B0%B4%E8%BD%A6/22576930
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49076', '民国龙骨水车', '22576930', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E8%80%81%E5%BA%95%E5%AD%90%E6%B0%B4%E7%BC%B8/22576931
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E8%80%81%E5%BA%95%E5%AD%90%E6%B0%B4%E7%BC%B8/22576931
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49077', '民国老底子水缸', '22576931', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E5%86%9C%E5%85%B7%E7%8A%81/22576932
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E5%86%9C%E5%85%B7%E7%8A%81/22576932
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49078', '民国农具犁', '22576932', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%AB%B9%E7%AE%A9%E7%AD%90/22576933
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%AB%B9%E7%AE%A9%E7%AD%90/22576933
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49079', '民国竹箩筐', '22576933', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E5%86%9C%E4%B8%9A%E5%B7%A5%E5%85%B7%E8%80%99/22576934
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E5%86%9C%E4%B8%9A%E5%B7%A5%E5%85%B7%E8%80%99/22576934
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49080', '民国农业工具耙', '22576934', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E9%BE%99%E6%B3%89%E9%9D%92%E7%93%B7%E5%A4%A9%E5%AE%AB%E4%B8%80%E7%BB%9D/22576935
+https://baike.baidu.com/historylist/%E9%BE%99%E6%B3%89%E9%9D%92%E7%93%B7%E5%A4%A9%E5%AE%AB%E4%B8%80%E7%BB%9D/22576935
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49081', '龙泉青瓷天宫一绝', '22576935', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E9%85%B1%E9%87%89%E9%99%B6%E9%85%92%E5%9D%9B/22576936
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E9%85%B1%E9%87%89%E9%99%B6%E9%85%92%E5%9D%9B/22576936
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49082', '民国酱釉陶酒坛', '22576936', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:18', '1']
+https://baike.baidu.com/historylist/%E5%B9%BF%E7%BB%93%E5%A4%A9%E4%B8%8B%E5%96%84%E7%BC%98%E4%B9%A6%E7%94%BB/22576937
+https://baike.baidu.com/historylist/%E5%B9%BF%E7%BB%93%E5%A4%A9%E4%B8%8B%E5%96%84%E7%BC%98%E4%B9%A6%E7%94%BB/22576937
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49083', '广结天下善缘书画', '22576937', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E5%B1%B1%E8%A5%BF%E9%A9%AC%E5%A5%87%E9%94%A6%E9%92%A2%E7%BB%93%E6%9E%84%E5%B7%A5%E7%A8%8B%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22576938
+https://baike.baidu.com/historylist/%E5%B1%B1%E8%A5%BF%E9%A9%AC%E5%A5%87%E9%94%A6%E9%92%A2%E7%BB%93%E6%9E%84%E5%B7%A5%E7%A8%8B%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22576938
+2018-05-11 17:55 查看 80小飞鼠 创建词条  
+['49084', '山西马奇锦钢结构工程有限公司', '22576938', '2018-05-11 17:55', '80小飞鼠', '创建词条', '2018-05-11 17:55', '80小飞鼠', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E6%B2%89%E6%9C%A8%E9%95%BF%E6%A1%8C/22576939
+https://baike.baidu.com/historylist/%E6%B2%89%E6%9C%A8%E9%95%BF%E6%A1%8C/22576939
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49085', '沉木长桌', '22576939', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E5%85%AB%E4%BB%99%E8%BF%87%E6%B5%B7%E4%B9%A6%E7%94%BB/22576940
+https://baike.baidu.com/historylist/%E5%85%AB%E4%BB%99%E8%BF%87%E6%B5%B7%E4%B9%A6%E7%94%BB/22576940
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49086', '八仙过海书画', '22576940', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E4%B9%A6%E5%86%99%E7%94%B5%E8%AF%9D/22576941
+https://baike.baidu.com/historylist/%E4%B9%A6%E5%86%99%E7%94%B5%E8%AF%9D/22576941
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:55 查看 揩邮兆矝牙 创建词条  
+['49087', '书写电话', '22576941', '2018-05-11 17:55', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:19', '2']
+https://baike.baidu.com/historylist/%E7%94%AC%E4%BB%99%E9%9B%85%E9%9B%86/22576942
+https://baike.baidu.com/historylist/%E7%94%AC%E4%BB%99%E9%9B%85%E9%9B%86/22576942
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49088', '甬仙雅集', '22576942', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E9%BE%99%E5%87%A4%E7%93%B6/22576943
+https://baike.baidu.com/historylist/%E9%BE%99%E5%87%A4%E7%93%B6/22576943
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49089', '龙凤瓶', '22576943', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B9%A6%E7%94%BB/22576944
+https://baike.baidu.com/historylist/%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B9%A6%E7%94%BB/22576944
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49090', '博物馆书画', '22576944', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%AE%A9%E7%AD%90%E5%86%9C%E7%94%A8%E5%B7%A5%E5%85%B7/22576945
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%AE%A9%E7%AD%90%E5%86%9C%E7%94%A8%E5%B7%A5%E5%85%B7/22576945
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49091', '民国箩筐农用工具', '22576945', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E6%B4%9B%E8%90%A8%E9%99%B6%E7%93%B7%E9%85%92%E7%93%B6%E4%B8%AD%E5%9B%BD%E7%BA%A2/22576946
+https://baike.baidu.com/historylist/%E6%B4%9B%E8%90%A8%E9%99%B6%E7%93%B7%E9%85%92%E7%93%B6%E4%B8%AD%E5%9B%BD%E7%BA%A2/22576946
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49092', '洛萨陶瓷酒瓶中国红', '22576946', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E4%B8%AD%E5%9B%BD%E7%BA%A2%E6%94%B6%E8%97%8F%E9%85%92%E7%93%B6/22576947
+https://baike.baidu.com/historylist/%E4%B8%AD%E5%9B%BD%E7%BA%A2%E6%94%B6%E8%97%8F%E9%85%92%E7%93%B6/22576947
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49093', '中国红收藏酒瓶', '22576947', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576948
+https://baike.baidu.com/historylist/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576948
+2018-05-11 19:09 查看 _沙漠小水珠 内容扩充  
+2018-05-11 17:55 查看 _沙漠小水珠 创建词条  
+['49094', '澳大利亚国家公园体系', '22576948', '2018-05-11 17:55', '_沙漠小水珠', '创建词条', '2018-05-11 19:09', '_沙漠小水珠', '', '2018-05-22 21:19', '2']
+https://baike.baidu.com/historylist/%E9%B8%A1%E8%A1%80%E7%9F%B3%E5%88%BB%E7%AB%A0/22576949
+https://baike.baidu.com/historylist/%E9%B8%A1%E8%A1%80%E7%9F%B3%E5%88%BB%E7%AB%A0/22576949
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49095', '鸡血石刻章', '22576949', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E6%9C%A8%E7%9B%92%E7%8F%8D%E5%93%81/22576950
+https://baike.baidu.com/historylist/%E6%9C%A8%E7%9B%92%E7%8F%8D%E5%93%81/22576950
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49096', '木盒珍品', '22576950', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E6%99%9A%E6%B8%85%E5%B0%8F%E9%93%9C%E7%A2%97/22576951
+https://baike.baidu.com/historylist/%E6%99%9A%E6%B8%85%E5%B0%8F%E9%93%9C%E7%A2%97/22576951
+2018-05-11 17:55 查看 w_ou 创建词条  
+['49097', '晚清小铜碗', '22576951', '2018-05-11 17:55', 'w_ou', '创建词条', '2018-05-11 17:55', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E7%8E%8B%E5%AE%8F%E6%B1%9F%E5%AD%97%E7%94%BB/22576952
+https://baike.baidu.com/historylist/%E7%8E%8B%E5%AE%8F%E6%B1%9F%E5%AD%97%E7%94%BB/22576952
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49098', '王宏江字画', '22576952', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:19', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E6%89%93%E7%A8%BB%E6%9C%BA/22576953
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E6%89%93%E7%A8%BB%E6%9C%BA/22576953
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49099', '民国打稻机', '22576953', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E6%B2%89%E6%9C%A8%E5%93%81%E9%85%92%E6%A1%8C/22576954
+https://baike.baidu.com/historylist/%E6%B2%89%E6%9C%A8%E5%93%81%E9%85%92%E6%A1%8C/22576954
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49100', '沉木品酒桌', '22576954', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%BA%A2%E6%9C%A8%E7%9B%98/22576955
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E7%BA%A2%E6%9C%A8%E7%9B%98/22576955
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49101', '民国红木盘', '22576955', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E5%8F%A4%E8%91%A3%E7%93%B6/22576956
+https://baike.baidu.com/historylist/%E6%B8%85%E5%8F%A4%E8%91%A3%E7%93%B6/22576956
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49102', '清古董瓶', '22576956', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E9%93%9C%E5%A3%B8/22576957
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E9%93%9C%E5%A3%B8/22576957
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49103', '民国铜壸', '22576957', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E8%93%91%E8%A1%A3/22576958
+https://baike.baidu.com/historylist/%E6%B0%91%E5%9B%BD%E8%93%91%E8%A1%A3/22576958
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49104', '民国蓑衣', '22576958', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E8%A2%AB%E9%9D%A2%E3%80%8A%E7%99%BE%E9%B8%9F%E6%9C%9D%E5%87%A4%E3%80%8B/22576959
+https://baike.baidu.com/historylist/%E6%B9%98%E7%BB%A3%E8%A2%AB%E9%9D%A2%E3%80%8A%E7%99%BE%E9%B8%9F%E6%9C%9D%E5%87%A4%E3%80%8B/22576959
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49105', '湘绣被面《百鸟朝凤》', '22576959', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E7%99%BD%E7%9F%B3%E5%8A%9B%E5%A3%AB%E9%9B%95%E5%83%8F/22576960
+https://baike.baidu.com/historylist/%E7%99%BD%E7%9F%B3%E5%8A%9B%E5%A3%AB%E9%9B%95%E5%83%8F/22576960
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49106', '白石力士雕像', '22576960', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E5%BD%A9%E7%BB%98%E8%83%A1%E4%BA%BA%E9%AA%91%E9%A9%BC%E4%BF%91/22576961
+https://baike.baidu.com/historylist/%E5%94%90%E5%BD%A9%E7%BB%98%E8%83%A1%E4%BA%BA%E9%AA%91%E9%A9%BC%E4%BF%91/22576961
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49107', '唐彩绘胡人骑驼俑', '22576961', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E5%BD%A9%E7%BB%98%E6%88%B4%E7%AC%A0%E5%B8%BD%E9%AA%91%E9%A9%AC%E5%A5%B3%E4%BF%91/22576962
+https://baike.baidu.com/historylist/%E5%94%90%E5%BD%A9%E7%BB%98%E6%88%B4%E7%AC%A0%E5%B8%BD%E9%AA%91%E9%A9%AC%E5%A5%B3%E4%BF%91/22576962
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49108', '唐彩绘戴笠帽骑马女俑', '22576962', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E7%BB%BF%E9%87%89%E6%8C%81%E7%89%A9%E7%94%B7%E7%AB%8B%E4%BF%91/22576963
+https://baike.baidu.com/historylist/%E5%94%90%E7%BB%BF%E9%87%89%E6%8C%81%E7%89%A9%E7%94%B7%E7%AB%8B%E4%BF%91/22576963
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49109', '唐绿釉持物男立俑', '22576963', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E7%99%BD%E7%93%B7%E7%BD%90/22576964
+https://baike.baidu.com/historylist/%E5%94%90%E7%99%BD%E7%93%B7%E7%BD%90/22576964
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49110', '唐白瓷罐', '22576964', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E7%94%A8%E6%88%B7%E7%BA%BF%E8%BD%BD%E6%B3%A2%E7%94%B5%E8%AF%9D%E8%AE%BE%E5%A4%87/22576965
+https://baike.baidu.com/historylist/%E7%94%A8%E6%88%B7%E7%BA%BF%E8%BD%BD%E6%B3%A2%E7%94%B5%E8%AF%9D%E8%AE%BE%E5%A4%87/22576965
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:56 查看 揩邮兆矝牙 创建词条  
+['49111', '用户线载波电话设备', '22576965', '2018-05-11 17:56', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:20', '2']
+https://baike.baidu.com/historylist/%E5%94%90%E7%94%9F%E8%82%96%E4%BF%91%E4%B8%80%E7%BB%84/22576966
+https://baike.baidu.com/historylist/%E5%94%90%E7%94%9F%E8%82%96%E4%BF%91%E4%B8%80%E7%BB%84/22576966
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49112', '唐生肖俑一组', '22576966', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E5%B1%B1%E5%B3%A6%E5%BD%A2%E7%81%B0%E9%99%B6%E7%A0%9A/22576967
+https://baike.baidu.com/historylist/%E5%94%90%E5%B1%B1%E5%B3%A6%E5%BD%A2%E7%81%B0%E9%99%B6%E7%A0%9A/22576967
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49113', '唐山峦形灰陶砚', '22576967', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E7%82%B9%E9%85%B1%E9%87%89%E9%99%B6%E9%92%B5/22576968
+https://baike.baidu.com/historylist/%E7%82%B9%E9%85%B1%E9%87%89%E9%99%B6%E9%92%B5/22576968
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49114', '点酱釉陶钵', '22576968', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E7%99%BD%E7%93%B7%E7%AB%A5%E6%88%8F%E4%BF%91/22576969
+https://baike.baidu.com/historylist/%E5%94%90%E7%99%BD%E7%93%B7%E7%AB%A5%E6%88%8F%E4%BF%91/22576969
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49115', '唐白瓷童戏俑', '22576969', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E7%BE%8E%E5%9B%BD%E5%B7%9E%E7%AB%8B%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576970
+https://baike.baidu.com/historylist/%E7%BE%8E%E5%9B%BD%E5%B7%9E%E7%AB%8B%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576970
+2018-05-11 17:56 查看 _沙漠小水珠 创建词条  
+['49116', '美国州立公园体系', '22576970', '2018-05-11 17:56', '_沙漠小水珠', '创建词条', '2018-05-11 17:56', '_沙漠小水珠', '', '2018-05-22 21:20', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E7%99%BD%E7%93%B7%E5%8F%8C%E9%BE%99%E7%93%B6/22576971
+https://baike.baidu.com/historylist/%E5%94%90%E7%99%BD%E7%93%B7%E5%8F%8C%E9%BE%99%E7%93%B6/22576971
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49117', '唐白瓷双龙瓶', '22576971', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E9%95%B6%E7%BB%BF%E6%9D%BE%E7%9F%B3%E8%9E%BA%E9%92%BF%E9%B9%A6%E9%B9%89%E7%BA%B9%E9%95%9C/22576972
+https://baike.baidu.com/historylist/%E5%94%90%E9%95%B6%E7%BB%BF%E6%9D%BE%E7%9F%B3%E8%9E%BA%E9%92%BF%E9%B9%A6%E9%B9%89%E7%BA%B9%E9%95%9C/22576972
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49118', '唐镶绿松石螺钿鹦鹉纹镜', '22576972', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E5%AF%B9%E6%A0%BC%E5%88%A9%E8%8A%AC%E7%BB%87%E9%94%A6/22576973
+https://baike.baidu.com/historylist/%E5%94%90%E5%AF%B9%E6%A0%BC%E5%88%A9%E8%8A%AC%E7%BB%87%E9%94%A6/22576973
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49119', '唐对格利芬织锦', '22576973', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%BE%AE%E6%B3%A2%E6%8E%A5%E5%8A%9B%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F%E6%8E%A5%E5%8A%9B%E6%96%B9%E5%BC%8F/22576974
+https://baike.baidu.com/historylist/%E5%BE%AE%E6%B3%A2%E6%8E%A5%E5%8A%9B%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F%E6%8E%A5%E5%8A%9B%E6%96%B9%E5%BC%8F/22576974
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:56 查看 揩邮兆矝牙 创建词条  
+['49120', '微波接力通信系统接力方式', '22576974', '2018-05-11 17:56', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:21', '2']
+https://baike.baidu.com/historylist/%E5%94%90%E9%99%B6%E6%89%91%E6%BB%A1/22576975
+https://baike.baidu.com/historylist/%E5%94%90%E9%99%B6%E6%89%91%E6%BB%A1/22576975
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49121', '唐陶扑满', '22576975', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E9%87%89%E9%99%B6%E7%AE%97%E7%8F%A0/22576976
+https://baike.baidu.com/historylist/%E5%94%90%E9%87%89%E9%99%B6%E7%AE%97%E7%8F%A0/22576976
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49122', '唐釉陶算珠', '22576976', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E9%93%9C%E5%B0%BA/22576977
+https://baike.baidu.com/historylist/%E5%94%90%E9%93%9C%E5%B0%BA/22576977
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49123', '唐铜尺', '22576977', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E9%93%9C%E7%A7%A4/22576978
+https://baike.baidu.com/historylist/%E5%94%90%E9%93%9C%E7%A7%A4/22576978
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49124', '唐铜秤', '22576978', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E5%B8%A6%E5%AD%97%E7%A0%96/22576979
+https://baike.baidu.com/historylist/%E5%94%90%E5%B8%A6%E5%AD%97%E7%A0%96/22576979
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49125', '唐带字砖', '22576979', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576980
+https://baike.baidu.com/historylist/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%E4%BD%93%E7%B3%BB/22576980
+2018-05-11 17:56 查看 _沙漠小水珠 创建词条  
+['49126', '美国国家公园体系', '22576980', '2018-05-11 17:56', '_沙漠小水珠', '创建词条', '2018-05-11 17:56', '_沙漠小水珠', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E7%9F%B3%E5%AE%9D%E7%8F%A0%E9%A1%B6/22576981
+https://baike.baidu.com/historylist/%E5%94%90%E7%9F%B3%E5%AE%9D%E7%8F%A0%E9%A1%B6/22576981
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49127', '唐石宝珠顶', '22576981', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%94%90%E7%9F%B3%E9%9B%95%E5%BF%8D%E5%86%AC%E8%8E%B2%E8%8A%B1%E7%BA%B9%E5%BA%95%E5%BA%A7/22576982
+https://baike.baidu.com/historylist/%E5%94%90%E7%9F%B3%E9%9B%95%E5%BF%8D%E5%86%AC%E8%8E%B2%E8%8A%B1%E7%BA%B9%E5%BA%95%E5%BA%A7/22576982
+2018-05-11 17:56 查看 w_ou 创建词条  
+['49128', '唐石雕忍冬莲花纹底座', '22576982', '2018-05-11 17:56', 'w_ou', '创建词条', '2018-05-11 17:56', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E8%A5%BF%E5%B8%82%E5%8C%97%E4%BE%A7%E2%80%9C%E7%9F%B3%E6%9D%BF%E6%A1%A5%E2%80%9D%E9%81%97%E8%BF%B9/22576983
+https://baike.baidu.com/historylist/%E8%A5%BF%E5%B8%82%E5%8C%97%E4%BE%A7%E2%80%9C%E7%9F%B3%E6%9D%BF%E6%A1%A5%E2%80%9D%E9%81%97%E8%BF%B9/22576983
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49129', '西市北侧“石板桥”遗迹', '22576983', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/GSM1800%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/22576984
+https://baike.baidu.com/historylist/GSM1800%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/22576984
+2018-05-11 17:57 查看 揩邮兆矝牙 创建词条  
+['49130', 'GSM1800移动通信系统', '22576984', '2018-05-11 17:57', '揩邮兆矝牙', '创建词条', '2018-05-11 17:57', '揩邮兆矝牙', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E8%A5%BF%E5%B8%82%E2%80%9C%E9%81%93%E8%B7%AF%E4%B8%8E%E8%BD%A6%E8%BE%99%E2%80%9D%E9%81%97%E8%BF%B9/22576985
+https://baike.baidu.com/historylist/%E8%A5%BF%E5%B8%82%E2%80%9C%E9%81%93%E8%B7%AF%E4%B8%8E%E8%BD%A6%E8%BE%99%E2%80%9D%E9%81%97%E8%BF%B9/22576985
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49131', '西市“道路与车辙”遗迹', '22576985', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E8%A5%BF%E5%B8%82%E2%80%9C%E4%B8%9C%E5%8C%97%E5%8D%81%E5%AD%97%E8%A1%97%E2%80%9D%E9%81%97%E5%9D%80/22576986
+https://baike.baidu.com/historylist/%E8%A5%BF%E5%B8%82%E2%80%9C%E4%B8%9C%E5%8C%97%E5%8D%81%E5%AD%97%E8%A1%97%E2%80%9D%E9%81%97%E5%9D%80/22576986
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49132', '西市“东北十字街”遗址', '22576986', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E5%8F%A4%E5%B8%8C%E8%85%8A%E9%93%B6%E5%B8%81/22576987
+https://baike.baidu.com/historylist/%E5%8F%A4%E5%B8%8C%E8%85%8A%E9%93%B6%E5%B8%81/22576987
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49133', '古希腊银币', '22576987', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:21', '1']
+https://baike.baidu.com/historylist/%E9%98%BF%E7%BA%B3%E6%96%AF%E5%A1%94%E4%BF%AE%E6%96%AF%E4%B8%80%E4%B8%96%E9%87%91%E5%B8%81/22576988
+https://baike.baidu.com/historylist/%E9%98%BF%E7%BA%B3%E6%96%AF%E5%A1%94%E4%BF%AE%E6%96%AF%E4%B8%80%E4%B8%96%E9%87%91%E5%B8%81/22576988
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49134', '阿纳斯塔修斯一世金币', '22576988', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E9%BA%9F%E5%8E%9F%E9%9B%86/22576989
+https://baike.baidu.com/historylist/%E9%BA%9F%E5%8E%9F%E9%9B%86/22576989
+2018-05-11 17:57 查看 愿咸与恒 创建词条  
+['49135', '麟原集', '22576989', '2018-05-11 17:57', '愿咸与恒', '创建词条', '2018-05-11 17:57', '愿咸与恒', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E7%8B%84%E5%A5%A5%E5%A4%9A%E5%9B%BE%E6%96%AF%E4%B8%80%E4%B8%96/22576990
+https://baike.baidu.com/historylist/%E7%8B%84%E5%A5%A5%E5%A4%9A%E5%9B%BE%E6%96%AF%E4%B8%80%E4%B8%96/22576990
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49136', '狄奥多图斯一世', '22576990', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E5%9A%88%E5%93%92%E6%89%93%E6%88%B3%E9%93%B6%E5%B8%81/22576991
+https://baike.baidu.com/historylist/%E5%9A%88%E5%93%92%E6%89%93%E6%88%B3%E9%93%B6%E5%B8%81/22576991
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49137', '嚈哒打戳银币', '22576991', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E9%B9%A4%E5%B1%B1%E9%9B%86/22576992
+https://baike.baidu.com/historylist/%E9%B9%A4%E5%B1%B1%E9%9B%86/22576992
+2018-05-11 17:57 查看 愿咸与恒 创建词条  
+['49138', '鹤山集', '22576992', '2018-05-11 17:57', '愿咸与恒', '创建词条', '2018-05-11 17:57', '愿咸与恒', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/3G%E6%97%A0%E7%BA%BF%E6%8E%A5%E5%8F%A3%E6%8A%80%E6%9C%AF/22576993
+https://baike.baidu.com/historylist/3G%E6%97%A0%E7%BA%BF%E6%8E%A5%E5%8F%A3%E6%8A%80%E6%9C%AF/22576993
+2018-05-11 17:57 查看 揩邮兆矝牙 创建词条  
+['49139', '3G无线接口技术', '22576993', '2018-05-11 17:57', '揩邮兆矝牙', '创建词条', '2018-05-11 17:57', '揩邮兆矝牙', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E8%A5%BF%E7%AA%81%E5%8E%A5%E6%89%93%E6%88%B3%E5%B5%8C%E9%87%91%E9%93%B6%E5%B8%81/22576994
+https://baike.baidu.com/historylist/%E8%A5%BF%E7%AA%81%E5%8E%A5%E6%89%93%E6%88%B3%E5%B5%8C%E9%87%91%E9%93%B6%E5%B8%81/22576994
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49140', '西突厥打戳嵌金银币', '22576994', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E4%BA%8C%E6%9E%97%E5%B1%85%E9%9B%86/22576995
+https://baike.baidu.com/historylist/%E4%BA%8C%E6%9E%97%E5%B1%85%E9%9B%86/22576995
+2018-05-11 17:57 查看 w871001 创建词条  
+['49141', '二林居集', '22576995', '2018-05-11 17:57', 'w871001', '创建词条', '2018-05-11 17:57', 'w871001', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E7%AA%81%E9%AA%91%E6%96%BD%E6%B1%97%E5%9B%BD%E9%93%9C%E5%B8%81/22576996
+https://baike.baidu.com/historylist/%E7%AA%81%E9%AA%91%E6%96%BD%E6%B1%97%E5%9B%BD%E9%93%9C%E5%B8%81/22576996
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49142', '突骑施汗国铜币', '22576996', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E9%B9%A4%E5%BD%92%E6%9D%A5%E4%BC%A0%E5%A5%87/22576997
+https://baike.baidu.com/historylist/%E9%B9%A4%E5%BD%92%E6%9D%A5%E4%BC%A0%E5%A5%87/22576997
+2018-05-11 17:57 查看 愿咸与恒 创建词条  
+['49143', '鹤归来传奇', '22576997', '2018-05-11 17:57', '愿咸与恒', '创建词条', '2018-05-11 17:57', '愿咸与恒', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E9%98%BF%E5%B0%94%E8%BE%BE%E5%B8%8C%E5%B0%94%E4%B8%80%E4%B8%96%E9%93%B6%E5%B8%81/22576998
+https://baike.baidu.com/historylist/%E9%98%BF%E5%B0%94%E8%BE%BE%E5%B8%8C%E5%B0%94%E4%B8%80%E4%B8%96%E9%93%B6%E5%B8%81/22576998
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49144', '阿尔达希尔一世银币', '22576998', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E9%80%9A%E4%BF%A1%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1%E8%83%BD%E5%8A%9B/22576999
+https://baike.baidu.com/historylist/%E9%80%9A%E4%BF%A1%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1%E8%83%BD%E5%8A%9B/22576999
+2018-05-11 17:57 查看 揩邮兆矝牙 创建词条  
+['49145', '通信工程设计能力', '22576999', '2018-05-11 17:57', '揩邮兆矝牙', '创建词条', '2018-05-11 17:57', '揩邮兆矝牙', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E5%80%AD%E9%A9%AC%E4%BA%9A%E7%8E%8B%E6%9C%9D%E9%87%91%E5%B8%81/22577000
+https://baike.baidu.com/historylist/%E5%80%AD%E9%A9%AC%E4%BA%9A%E7%8E%8B%E6%9C%9D%E9%87%91%E5%B8%81/22577000
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49146', '倭马亚王朝金币', '22577000', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E9%B9%A4%E5%BE%81%E5%BD%95/22577001
+https://baike.baidu.com/historylist/%E9%B9%A4%E5%BE%81%E5%BD%95/22577001
+2018-05-11 17:57 查看 愿咸与恒 创建词条  
+['49147', '鹤征录', '22577001', '2018-05-11 17:57', '愿咸与恒', '创建词条', '2018-05-11 17:57', '愿咸与恒', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E6%96%B0%E8%8E%BD%E6%97%B6%E6%9C%9F%E2%80%9C%E5%9B%BD%E5%AE%9D%E9%87%91%E5%8C%AE%E7%9B%B4%E4%B8%87%E2%80%9D%E9%92%B1/22577002
+https://baike.baidu.com/historylist/%E6%96%B0%E8%8E%BD%E6%97%B6%E6%9C%9F%E2%80%9C%E5%9B%BD%E5%AE%9D%E9%87%91%E5%8C%AE%E7%9B%B4%E4%B8%87%E2%80%9D%E9%92%B1/22577002
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49148', '新莽时期“国宝金匮直万”钱', '22577002', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E8%A5%BF%E5%91%A8%E5%9E%82%E5%86%A0%E5%87%A4%E9%B8%9F%E7%BA%B9%E7%B0%8B/22577003
+https://baike.baidu.com/historylist/%E8%A5%BF%E5%91%A8%E5%9E%82%E5%86%A0%E5%87%A4%E9%B8%9F%E7%BA%B9%E7%B0%8B/22577003
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49149', '西周垂冠凤鸟纹簋', '22577003', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E5%A8%81%E6%B5%B7%E6%96%87%E7%AC%94%E5%B3%B0%E8%A3%85%E9%A5%B0%E5%B7%A5%E7%A8%8B%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22577004
+https://baike.baidu.com/historylist/%E5%A8%81%E6%B5%B7%E6%96%87%E7%AC%94%E5%B3%B0%E8%A3%85%E9%A5%B0%E5%B7%A5%E7%A8%8B%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22577004
+2018-05-11 17:57 查看 ccc时间会走的 创建词条  
+['49150', '威海文笔峰装饰工程有限公司', '22577004', '2018-05-11 17:57', 'ccc时间会走的', '创建词条', '2018-05-11 17:57', 'ccc时间会走的', '', '2018-05-22 21:22', '1']
+https://baike.baidu.com/historylist/%E5%95%86%E4%BA%BA%E9%A6%96%E9%9D%92%E9%93%9C%E5%88%80/22577005
+https://baike.baidu.com/historylist/%E5%95%86%E4%BA%BA%E9%A6%96%E9%9D%92%E9%93%9C%E5%88%80/22577005
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49151', '商人首青铜刀', '22577005', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E5%AE%8B%E9%9D%92%E9%87%89%E5%88%BB%E8%8A%B1%E7%BC%A0%E6%9E%9D%E7%89%A1%E4%B8%B9%E7%BA%B9%E7%9B%B4%E5%8F%A3%E5%B0%8A/22577006
+https://baike.baidu.com/historylist/%E5%AE%8B%E9%9D%92%E9%87%89%E5%88%BB%E8%8A%B1%E7%BC%A0%E6%9E%9D%E7%89%A1%E4%B8%B9%E7%BA%B9%E7%9B%B4%E5%8F%A3%E5%B0%8A/22577006
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49152', '宋青釉刻花缠枝牡丹纹直口尊', '22577006', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E8%87%9E%E7%BF%81%E8%AF%97%E9%9B%86/22577007
+https://baike.baidu.com/historylist/%E8%87%9E%E7%BF%81%E8%AF%97%E9%9B%86/22577007
+2018-05-11 17:57 查看 愿咸与恒 创建词条  
+['49153', '臞翁诗集', '22577007', '2018-05-11 17:57', '愿咸与恒', '创建词条', '2018-05-11 17:57', '愿咸与恒', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E5%8C%97%E4%BA%AC%E5%92%8C%E8%B0%B7%E5%85%B1%E5%88%9B%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22577008
+https://baike.baidu.com/historylist/%E5%8C%97%E4%BA%AC%E5%92%8C%E8%B0%B7%E5%85%B1%E5%88%9B%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22577008
+2018-05-11 17:57 查看 flyJasonzhou 创建词条  
+['49154', '北京和谷共创科技有限公司', '22577008', '2018-05-11 17:57', 'flyJasonzhou', '创建词条', '2018-05-11 17:57', 'flyJasonzhou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E4%B8%9C%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD%E5%8F%8C%E4%BA%BA%E6%89%98%E7%BB%BF%E7%90%89%E7%92%83%E6%96%B9%E6%88%92%E9%9D%A2%E9%87%91%E6%88%92%E6%8C%87/22577009
+https://baike.baidu.com/historylist/%E4%B8%9C%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD%E5%8F%8C%E4%BA%BA%E6%89%98%E7%BB%BF%E7%90%89%E7%92%83%E6%96%B9%E6%88%92%E9%9D%A2%E9%87%91%E6%88%92%E6%8C%87/22577009
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49155', '东罗马帝国双人托绿琉璃方戒面金戒指', '22577009', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87104%E6%8A%80%E6%9C%AF%E5%A7%94%E5%91%98%E4%BC%9A/22577010
+https://baike.baidu.com/historylist/%E5%9B%BD%E9%99%85%E6%A0%87%E5%87%86%E5%8C%96%E7%BB%84%E7%BB%87104%E6%8A%80%E6%9C%AF%E5%A7%94%E5%91%98%E4%BC%9A/22577010
+2018-05-11 17:57 查看 揩邮兆矝牙 创建词条  
+['49156', '国际标准化组织104技术委员会', '22577010', '2018-05-11 17:57', '揩邮兆矝牙', '创建词条', '2018-05-11 17:57', '揩邮兆矝牙', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E7%BC%95%E9%87%91%E9%95%82%E7%8E%89%E4%B8%83%E8%A8%80%E8%81%94%E3%80%8B/22577011
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E7%BC%95%E9%87%91%E9%95%82%E7%8E%89%E4%B8%83%E8%A8%80%E8%81%94%E3%80%8B/22577011
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49157', '《行书缕金镂玉七言联》', '22577011', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E9%AB%91%E9%AB%85%E9%9B%86/22577012
+https://baike.baidu.com/historylist/%E9%AB%91%E9%AB%85%E9%9B%86/22577012
+2018-05-11 17:57 查看 愿咸与恒 创建词条  
+['49158', '髑髅集', '22577012', '2018-05-11 17:57', '愿咸与恒', '创建词条', '2018-05-11 17:57', '愿咸与恒', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E6%AF%94%E5%A6%82%E5%85%AB%E8%A8%80%E8%81%94%E3%80%8B/22577013
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E6%AF%94%E5%A6%82%E5%85%AB%E8%A8%80%E8%81%94%E3%80%8B/22577013
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49159', '《行书比如八言联》', '22577013', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E6%96%B0%E5%9E%8B%E5%A5%A5%E5%9C%B0%E5%88%A9%E9%9A%A7%E9%81%93%E4%BF%AE%E7%AD%91%E6%B3%95/22577014
+https://baike.baidu.com/historylist/%E6%96%B0%E5%9E%8B%E5%A5%A5%E5%9C%B0%E5%88%A9%E9%9A%A7%E9%81%93%E4%BF%AE%E7%AD%91%E6%B3%95/22577014
+2018-05-11 17:57 查看 揩邮兆矝牙 创建词条  
+['49160', '新型奥地利隧道修筑法', '22577014', '2018-05-11 17:57', '揩邮兆矝牙', '创建词条', '2018-05-11 17:57', '揩邮兆矝牙', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E5%BD%92%E6%AC%A4%E8%80%81%E7%9F%A3%E8%A1%8C%E4%B9%A6%E4%B8%83%E8%A8%80%E8%81%94%E3%80%8B/22577015
+https://baike.baidu.com/historylist/%E3%80%8A%E5%BD%92%E6%AC%A4%E8%80%81%E7%9F%A3%E8%A1%8C%E4%B9%A6%E4%B8%83%E8%A8%80%E8%81%94%E3%80%8B/22577015
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49161', '《归欤老矣行书七言联》', '22577015', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E9%92%BB%E7%9C%BC%E7%88%86%E7%A0%B4%E6%B3%95%E6%96%BD%E5%B7%A5/22577016
+https://baike.baidu.com/historylist/%E9%92%BB%E7%9C%BC%E7%88%86%E7%A0%B4%E6%B3%95%E6%96%BD%E5%B7%A5/22577016
+2018-05-11 17:57 查看 揩邮兆矝牙 创建词条  
+['49162', '钻眼爆破法施工', '22577016', '2018-05-11 17:57', '揩邮兆矝牙', '创建词条', '2018-05-11 17:57', '揩邮兆矝牙', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E7%AB%B9%E5%BE%84%E8%8C%85%E5%B1%8B%E5%9B%9B%E8%A8%80%E8%81%94%E3%80%8B/22577017
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E7%AB%B9%E5%BE%84%E8%8C%85%E5%B1%8B%E5%9B%9B%E8%A8%80%E8%81%94%E3%80%8B/22577017
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49163', '《行书竹径茅屋四言联》', '22577017', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E9%B1%BC%E9%BE%99%E7%8A%80%E8%B1%A1%E4%B8%83%E8%A8%80%E8%81%94%E3%80%8B/22577018
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E9%B1%BC%E9%BE%99%E7%8A%80%E8%B1%A1%E4%B8%83%E8%A8%80%E8%81%94%E3%80%8B/22577018
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49164', '《行书鱼龙犀象七言联》', '22577018', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E5%8F%8C%E5%B9%85%E5%9B%9B%E8%BD%A6%E9%81%93/22577019
+https://baike.baidu.com/historylist/%E5%8F%8C%E5%B9%85%E5%9B%9B%E8%BD%A6%E9%81%93/22577019
+2018-05-11 17:57 查看 揩邮兆矝牙 创建词条  
+['49165', '双幅四车道', '22577019', '2018-05-11 17:57', '揩邮兆矝牙', '创建词条', '2018-05-11 17:57', '揩邮兆矝牙', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E5%A3%AE%E5%BF%83%E5%BD%92%E6%A2%A6%E4%BA%94%E8%A8%80%E8%81%94%E3%80%8B/22577020
+https://baike.baidu.com/historylist/%E3%80%8A%E8%A1%8C%E4%B9%A6%E5%A3%AE%E5%BF%83%E5%BD%92%E6%A2%A6%E4%BA%94%E8%A8%80%E8%81%94%E3%80%8B/22577020
+2018-05-11 17:57 查看 w_ou 创建词条  
+['49166', '《行书壮心归梦五言联》', '22577020', '2018-05-11 17:57', 'w_ou', '创建词条', '2018-05-11 17:57', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E5%90%89%E9%87%91%E7%91%9E%E8%8A%B1%E5%B1%8F%E3%80%8B/22577021
+https://baike.baidu.com/historylist/%E3%80%8A%E5%90%89%E9%87%91%E7%91%9E%E8%8A%B1%E5%B1%8F%E3%80%8B/22577021
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49167', '《吉金瑞花屏》', '22577021', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:23', '1']
+https://baike.baidu.com/historylist/%E5%88%B6%E6%AD%A2%E9%9D%9E%E6%B3%95%E5%8A%AB%E6%8C%81%E8%88%AA%E7%A9%BA%E5%99%A8%E5%85%AC%E7%BA%A6/22577022
+https://baike.baidu.com/historylist/%E5%88%B6%E6%AD%A2%E9%9D%9E%E6%B3%95%E5%8A%AB%E6%8C%81%E8%88%AA%E7%A9%BA%E5%99%A8%E5%85%AC%E7%BA%A6/22577022
+2018-05-11 17:58 查看 揩邮兆矝牙 创建词条  
+['49168', '制止非法劫持航空器公约', '22577022', '2018-05-11 17:58', '揩邮兆矝牙', '创建词条', '2018-05-11 17:58', '揩邮兆矝牙', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E9%A6%8C%E5%BD%BC%E5%8D%97%E4%BA%A9%E3%80%8B%E5%9B%BE%E8%BD%B4/22577023
+https://baike.baidu.com/historylist/%E3%80%8A%E9%A6%8C%E5%BD%BC%E5%8D%97%E4%BA%A9%E3%80%8B%E5%9B%BE%E8%BD%B4/22577023
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49169', '《馌彼南亩》图轴', '22577023', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E8%94%AC%E9%A6%99%E3%80%8B%E5%9B%BE%E8%BD%B4/22577024
+https://baike.baidu.com/historylist/%E3%80%8A%E8%94%AC%E9%A6%99%E3%80%8B%E5%9B%BE%E8%BD%B4/22577024
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49170', '《蔬香》图轴', '22577024', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E7%AC%AC%E4%B8%80%E6%89%B9%E5%9B%BD%E5%AE%B6%E7%BA%A7%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA/22577025
+https://baike.baidu.com/historylist/%E7%AC%AC%E4%B8%80%E6%89%B9%E5%9B%BD%E5%AE%B6%E7%BA%A7%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA/22577025
+2018-05-11 17:58 查看 _沙漠小水珠 创建词条  
+['49171', '第一批国家级风景名胜区', '22577025', '2018-05-11 17:58', '_沙漠小水珠', '创建词条', '2018-05-11 17:58', '_沙漠小水珠', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E5%B1%B1%E4%B9%A1%E4%B8%80%E8%A7%92%E3%80%8B%E5%9B%BE%E8%BD%B4/22577026
+https://baike.baidu.com/historylist/%E3%80%8A%E5%B1%B1%E4%B9%A1%E4%B8%80%E8%A7%92%E3%80%8B%E5%9B%BE%E8%BD%B4/22577026
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49172', '《山乡一角》图轴', '22577026', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E4%B8%89%E5%8F%8B%E5%9B%BE%E3%80%8B%E5%9B%BE%E8%BD%B4/22577027
+https://baike.baidu.com/historylist/%E3%80%8A%E4%B8%89%E5%8F%8B%E5%9B%BE%E3%80%8B%E5%9B%BE%E8%BD%B4/22577027
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49173', '《三友图》图轴', '22577027', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E7%A7%8B%E7%86%9F%E3%80%8B%E5%9B%BE%E8%BD%B4/22577028
+https://baike.baidu.com/historylist/%E3%80%8A%E7%A7%8B%E7%86%9F%E3%80%8B%E5%9B%BE%E8%BD%B4/22577028
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49174', '《秋熟》图轴', '22577028', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E9%A6%A5%E9%A6%A5%E6%98%A5%E6%AD%A3%E9%85%A3%E3%80%8B%E5%9B%BE%E8%BD%B4/22577029
+https://baike.baidu.com/historylist/%E3%80%8A%E9%A6%A5%E9%A6%A5%E6%98%A5%E6%AD%A3%E9%85%A3%E3%80%8B%E5%9B%BE%E8%BD%B4/22577029
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49175', '《馥馥春正酣》图轴', '22577029', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E7%B9%81%E8%8D%A3%E6%98%8C%E7%9B%9B%20%E3%80%8B%E5%9B%BE%E8%BD%B4/22577030
+https://baike.baidu.com/historylist/%E3%80%8A%E7%B9%81%E8%8D%A3%E6%98%8C%E7%9B%9B%20%E3%80%8B%E5%9B%BE%E8%BD%B4/22577030
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49176', '《繁荣昌盛 》图轴', '22577030', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E5%88%B6%E6%AD%A2%E5%8D%B1%E5%AE%B3%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%AE%89%E5%85%A8%E9%9D%9E%E6%B3%95%E8%A1%8C%E4%B8%BA%E5%85%AC%E7%BA%A6/22577031
+https://baike.baidu.com/historylist/%E5%88%B6%E6%AD%A2%E5%8D%B1%E5%AE%B3%E6%B0%91%E7%94%A8%E8%88%AA%E7%A9%BA%E5%AE%89%E5%85%A8%E9%9D%9E%E6%B3%95%E8%A1%8C%E4%B8%BA%E5%85%AC%E7%BA%A6/22577031
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:58 查看 揩邮兆矝牙 创建词条  
+['49177', '制止危害民用航空安全非法行为公约', '22577031', '2018-05-11 17:58', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:24', '2']
+https://baike.baidu.com/historylist/%E3%80%8A%E4%B8%9C%E9%A3%8E%E5%90%B9%E9%81%8D%E5%A4%A7%E5%9C%B0%E3%80%8B%E5%9B%BE%E8%BD%B4/22577032
+https://baike.baidu.com/historylist/%E3%80%8A%E4%B8%9C%E9%A3%8E%E5%90%B9%E9%81%8D%E5%A4%A7%E5%9C%B0%E3%80%8B%E5%9B%BE%E8%BD%B4/22577032
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49178', '《东风吹遍大地》图轴', '22577032', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E6%99%A8%E6%9B%A6%E3%80%8B%E5%9B%BE%E8%BD%B4/22577033
+https://baike.baidu.com/historylist/%E3%80%8A%E6%99%A8%E6%9B%A6%E3%80%8B%E5%9B%BE%E8%BD%B4/22577033
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49179', '《晨曦》图轴', '22577033', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E7%AC%AC%E4%BA%8C%E6%89%B9%E5%9B%BD%E5%AE%B6%E7%BA%A7%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA/22577034
+https://baike.baidu.com/historylist/%E7%AC%AC%E4%BA%8C%E6%89%B9%E5%9B%BD%E5%AE%B6%E7%BA%A7%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA/22577034
+2018-05-11 17:58 查看 _沙漠小水珠 创建词条  
+['49180', '第二批国家级风景名胜区', '22577034', '2018-05-11 17:58', '_沙漠小水珠', '创建词条', '2018-05-11 17:58', '_沙漠小水珠', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E9%93%B6%E9%94%84%E3%80%8B%E5%9B%BE%E8%BD%B4/22577035
+https://baike.baidu.com/historylist/%E3%80%8A%E9%93%B6%E9%94%84%E3%80%8B%E5%9B%BE%E8%BD%B4/22577035
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49181', '《银锄》图轴', '22577035', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E5%AE%8B%E5%85%83%E6%98%8E%E6%B8%85%E4%B9%A6%E7%94%BB%E5%AE%B6%E5%B9%B4%E8%A1%A8%E3%80%8B/22577036
+https://baike.baidu.com/historylist/%E3%80%8A%E5%AE%8B%E5%85%83%E6%98%8E%E6%B8%85%E4%B9%A6%E7%94%BB%E5%AE%B6%E5%B9%B4%E8%A1%A8%E3%80%8B/22577036
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49182', '《宋元明清书画家年表》', '22577036', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E9%95%9C%E6%96%87%E8%80%83%E9%87%8A%E3%80%8B/22577037
+https://baike.baidu.com/historylist/%E3%80%8A%E9%95%9C%E6%96%87%E8%80%83%E9%87%8A%E3%80%8B/22577037
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49183', '《镜文考释》', '22577037', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:24', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E4%B8%AD%E5%9B%BD%E7%89%88%E7%94%BB%E5%8F%B2%E7%95%A5%E3%80%8B/22577038
+https://baike.baidu.com/historylist/%E3%80%8A%E4%B8%AD%E5%9B%BD%E7%89%88%E7%94%BB%E5%8F%B2%E7%95%A5%E3%80%8B/22577038
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49184', '《中国版画史略》', '22577038', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E7%9F%A5%E9%B1%BC%E5%A0%82%E4%B9%A6%E7%94%BB%E5%BD%95%E3%80%8B/22577039
+https://baike.baidu.com/historylist/%E3%80%8A%E7%9F%A5%E9%B1%BC%E5%A0%82%E4%B9%A6%E7%94%BB%E5%BD%95%E3%80%8B/22577039
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49185', '《知鱼堂书画录》', '22577039', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E7%94%9F%E4%BA%A7%E7%BB%BC%E5%90%88%E8%AE%A1%E5%88%92/22577040
+https://baike.baidu.com/historylist/%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E7%94%9F%E4%BA%A7%E7%BB%BC%E5%90%88%E8%AE%A1%E5%88%92/22577040
+2018-05-12 19:35 查看 揩邮兆矝牙 更正错误  
+2018-05-11 17:58 查看 揩邮兆矝牙 创建词条  
+['49186', '航空运输生产综合计划', '22577040', '2018-05-11 17:58', '揩邮兆矝牙', '创建词条', '2018-05-12 19:35', '揩邮兆矝牙', '', '2018-05-22 21:25', '2']
+https://baike.baidu.com/historylist/%E3%80%8A%E5%86%99%E6%84%8F%E8%8A%B1%E9%B8%9F%E7%94%BB%E5%88%9B%E4%BD%9C%E6%8A%80%E6%B3%95%E5%8D%81%E5%85%AD%E8%AE%B2%E3%80%8B/22577041
+https://baike.baidu.com/historylist/%E3%80%8A%E5%86%99%E6%84%8F%E8%8A%B1%E9%B8%9F%E7%94%BB%E5%88%9B%E4%BD%9C%E6%8A%80%E6%B3%95%E5%8D%81%E5%85%AD%E8%AE%B2%E3%80%8B/22577041
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49187', '《写意花鸟画创作技法十六讲》', '22577041', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E3%80%8A%E7%8C%AB%E8%9D%B6%E5%9B%BE%E3%80%8B%E5%9B%BE%E8%BD%B4/22577042
+https://baike.baidu.com/historylist/%E3%80%8A%E7%8C%AB%E8%9D%B6%E5%9B%BE%E3%80%8B%E5%9B%BE%E8%BD%B4/22577042
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49188', '《猫蝶图》图轴', '22577042', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E6%9D%8E%E6%B5%8E%E5%AE%8F/22577043
+https://baike.baidu.com/historylist/%E6%9D%8E%E6%B5%8E%E5%AE%8F/22577043
+2018-05-11 17:58 查看 哎悲催噩噩 创建词条  
+['49189', '李济宏', '22577043', '2018-05-11 17:58', '哎悲催噩噩', '创建词条', '2018-05-11 17:58', '哎悲催噩噩', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E7%AC%AC%E4%B8%89%E6%89%B9%E5%9B%BD%E5%AE%B6%E7%BA%A7%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA/22577044
+https://baike.baidu.com/historylist/%E7%AC%AC%E4%B8%89%E6%89%B9%E5%9B%BD%E5%AE%B6%E7%BA%A7%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA/22577044
+2018-05-11 17:58 查看 _沙漠小水珠 创建词条  
+['49190', '第三批国家级风景名胜区', '22577044', '2018-05-11 17:58', '_沙漠小水珠', '创建词条', '2018-05-11 17:58', '_沙漠小水珠', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E5%AE%A0%E5%A9%9A36%E8%AE%A1%EF%BC%8C%E8%AF%B1%E6%8B%90%E7%89%B9%E5%B7%A5%E5%B0%8F%E5%A8%87%E5%A6%BB/22577045
+https://baike.baidu.com/historylist/%E5%AE%A0%E5%A9%9A36%E8%AE%A1%EF%BC%8C%E8%AF%B1%E6%8B%90%E7%89%B9%E5%B7%A5%E5%B0%8F%E5%A8%87%E5%A6%BB/22577045
+2018-05-11 17:58 查看 zgbkvw 创建词条  
+['49191', '宠婚36计，诱拐特工小娇妻', '22577045', '2018-05-11 17:58', 'zgbkvw', '创建词条', '2018-05-11 17:58', 'zgbkvw', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E6%BD%98%E5%A4%A9%E5%AF%BF%E3%80%8A%E8%8A%B1%E9%B8%9F%E3%80%8B%E5%9B%BE%E8%BD%B4/22577046
+https://baike.baidu.com/historylist/%E6%BD%98%E5%A4%A9%E5%AF%BF%E3%80%8A%E8%8A%B1%E9%B8%9F%E3%80%8B%E5%9B%BE%E8%BD%B4/22577046
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49192', '潘天寿《花鸟》图轴', '22577046', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E9%83%91%E6%9D%BF%E6%A1%A5%E3%80%8A%E5%A2%A8%E7%AB%B9%E3%80%8B%E7%A2%91/22577047
+https://baike.baidu.com/historylist/%E6%B8%85%E9%83%91%E6%9D%BF%E6%A1%A5%E3%80%8A%E5%A2%A8%E7%AB%B9%E3%80%8B%E7%A2%91/22577047
+2018-05-11 17:58 查看 w_ou 创建词条  
+['49193', '清郑板桥《墨竹》碑', '22577047', '2018-05-11 17:58', 'w_ou', '创建词条', '2018-05-11 17:58', 'w_ou', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E4%B8%87%E5%9B%BD%E9%82%AE%E6%94%BF%E8%81%94%E7%9B%9F%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A/22577048
+https://baike.baidu.com/historylist/%E4%B8%87%E5%9B%BD%E9%82%AE%E6%94%BF%E8%81%94%E7%9B%9F%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A/22577048
+2018-05-11 17:58 查看 揩邮兆矝牙 创建词条  
+['49194', '万国邮政联盟代表大会', '22577048', '2018-05-11 17:58', '揩邮兆矝牙', '创建词条', '2018-05-11 17:58', '揩邮兆矝牙', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E9%BB%84%E5%AE%BE%E8%99%B9%E3%80%8A%E5%A2%A8%E7%AC%94%E5%B1%B1%E6%B0%B4%E5%9B%BE%E8%BD%B4%E3%80%8B/22577049
+https://baike.baidu.com/historylist/%E9%BB%84%E5%AE%BE%E8%99%B9%E3%80%8A%E5%A2%A8%E7%AC%94%E5%B1%B1%E6%B0%B4%E5%9B%BE%E8%BD%B4%E3%80%8B/22577049
+2018-05-11 17:59 查看 w_ou 创建词条  
+['49195', '黄宾虹《墨笔山水图轴》', '22577049', '2018-05-11 17:59', 'w_ou', '创建词条', '2018-05-11 17:59', 'w_ou', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E6%B8%85%E8%B5%B5%E4%B9%8B%E8%B0%A6%E3%80%8A%E8%8A%B1%E5%8D%89%E5%85%AB%E6%9D%A1%E5%B1%8F%E4%B9%8B%E8%8D%B7%E8%8A%B1%E5%9B%BE%E8%BD%B4%E3%80%8B/22577050
+https://baike.baidu.com/historylist/%E6%B8%85%E8%B5%B5%E4%B9%8B%E8%B0%A6%E3%80%8A%E8%8A%B1%E5%8D%89%E5%85%AB%E6%9D%A1%E5%B1%8F%E4%B9%8B%E8%8D%B7%E8%8A%B1%E5%9B%BE%E8%BD%B4%E3%80%8B/22577050
+2018-05-11 17:59 查看 w_ou 创建词条  
+['49196', '清赵之谦《花卉八条屏之荷花图轴》', '22577050', '2018-05-11 17:59', 'w_ou', '创建词条', '2018-05-11 17:59', 'w_ou', '', '2018-05-22 21:25', '1']
+https://baike.baidu.com/historylist/%E4%B8%87%E9%87%8C%E9%95%BF%E5%BE%81/22577051
+http://baike.baidu.com/edit/1/22577051
+名称 万里长征
+地点 中国
+时间 1934年10月-1936年10月
+参战方 工农红军
+结果 胜利到达陕北
+参战方兵力
+如：希腊 10000人，限30字
+请参照项目说明填写。若某项不适合当前词条，可留空。
+伤亡情况
+如：希腊 死亡192人，限30字
+主要指挥官 毛泽东等
+每组里信息项最多6字，数据项最多15字
+添加自定义项
+Traceback (most recent call last):
+  File "F:\WorkPlace\python\AutoSearchBaike\website\test_case\search_baike.py", line 100, in test_login
+    list_str = myfile.get_list_str(content, title, num)
+  File "F:\WorkPlace\python\AutoSearchBaike\website\test_case\search_baike_fun_share\file.py", line 83, in get_list_str
+    modify_user = singal_line_array[3]
+IndexError: list index out of range
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    </tbody>
+    <tfoot>
+        <tr id='total_row'>
+            <td>Total</td>
+            <td>1</td>
+            <td class="text text-success">0</td>
+            <td class="text text-danger">0</td>
+            <td class="text text-warning">1</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tfoot>
+</table>
+
+    <div id='ending'>&nbsp;</div>
+</div>
+
+</body>
+</html>

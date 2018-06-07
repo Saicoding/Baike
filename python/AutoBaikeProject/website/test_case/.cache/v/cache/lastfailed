@@ -1,0 +1,5 @@
+{
+  "search_baike.py": true,
+  "search_baike.py::LoginTest::test_login": true,
+  "test_baike.py::LoginTest::test_login": true
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AutoTestProject/website/test_case" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTestProject/website" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTestProject" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTestProject/website/test_case/page_object" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTestProject/driver" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTestProject/website/test_case/model" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike/website/test_case/model" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike/driver" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike/website" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike/website/test_case" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike/website/test_case/.cache" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike/website/test_case/page_object" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike/website/test_case/search_baike_fun_share" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoSearchBaike/website/test_report" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/driver" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/website" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/website/test_case" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/website/test_case/create_baike_fun_share" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/website/test_case/page_object" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/website/test_report" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/website/test_case/.cache" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/website/test_data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoCreatBaike/website/test_report/screenshot" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject/website/test_case/model" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject/driver" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject/website" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject/website/test_case" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject/website/test_case/page_object" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject/website/test_case/baike_share" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject/website/test_data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject/website/test_report" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoBaikeProject" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/AutoCreatBaike/website/test_case/model" />
+      <excludeFolder url="file://$MODULE_DIR$/PageObject" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.6" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="projectConfiguration" value="py.test" />
+    <option name="PROJECT_TEST_RUNNER" value="py.test" />
+  </component>
+</module>
