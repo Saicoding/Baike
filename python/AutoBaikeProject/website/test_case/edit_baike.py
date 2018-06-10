@@ -169,3 +169,4 @@ class EditBaike(myunit.StartEnd):
 					edit_funs.send_message(result, num1)
 				else:
 					edit_funs.trade_fail_open_url(get_book_url)
+					dd
