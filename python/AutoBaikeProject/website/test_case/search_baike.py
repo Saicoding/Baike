@@ -104,9 +104,9 @@ class SearchBaike(myunit.StartEnd):
                 # 处理字符串，并写入pageNum.json文件中
                 search_funs.write_to_page_num(list_str, page_num)
                 # 保存所有变化的量
-                search_funs.save_data(start_statistics_num,start_statistics_time,list_str)
+                search_funs.save_data(list_str)
                 # 统计各种数据
-                search_funs.statistics(start_statistics_num, start_statistics_time,list_str)
+                search_funs.statistics(list_str)
                 num = int(num) + 1
                 num = str(num)
 

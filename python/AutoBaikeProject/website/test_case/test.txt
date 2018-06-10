@@ -1,0 +1,13 @@
+apiver	v3
+authsid	uRjGgnedyipfbdg4jXLjIX01UfG7Ypy3
+callback	bd__cbs__4x5538
+clientfrom
+cu	http://baike.baidu.com/usercenter/lemmas
+lstr	3d5bWoCCq+keP6wzoVjTMowMHbSOCXl1URtQ0doviabweu0soIziQnRyoWdNleIDWOGB3lhkm4mmnJ+RInOF
+ltoken	1bf8b3c6406b105f67c26668ff58a491
+realnamewidget-init
+sdk_version
+tpl	wk
+traceid	C4879701
+tt	1528432430272
+v	1528432430272

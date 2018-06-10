@@ -20,7 +20,7 @@ class CreateBaike(myunit.StartEnd):
 		mod = {
 			'order': 4,  # 1顺序，2随机，3倒叙,4单点
 			'each_num': 10,  # 表示每个帐户创建的词条数
-			'index': 4  # 从第几个账号开始
+			'index': 17  # 从第几个账号开始
 		}
 
 		start_user_index = mod['index']

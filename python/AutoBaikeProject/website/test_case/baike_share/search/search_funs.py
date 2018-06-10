@@ -136,7 +136,7 @@ class SearchFuns():
 			int1 = int(str1[0:4]+str1[5:7]+str1[8:10]+str1[11:13]+str1[14:16]+str1[17:19])
 		return int1
 
-	def save_data(self, start_statistics_num,start_statistics_time,res):
+	def save_data(self, res):
 		# 打开ini文件
 		result = self.open_ini_result_object()
 
@@ -218,9 +218,9 @@ class SearchFuns():
 		return result
 
 	# 统计各种数据
-	def statistics(self,start_statistics_num,start_statistics_time,list_str):
+	def statistics(self,list_str):
 		# 获取当前时间
-		tz = pytz.timezone('Asia/Shanghai')
+		# tz = pytz.timezone('Asia/Shanghai')
 		# current_time = str(datetime.datetime.now(tz))[0:16]
 
 		# 获取当前的create_time的数字

@@ -59,7 +59,7 @@ class Bookzgrm():
 		# 获取作者简介
 		author_info = self.driver.find_elements_by_css_selector('.info-con-text > p')[1].text
 		author_info = re.sub('(https|http):.*(com|cn|de)', '', author_info)
-
+		author_info = re.sub('www:.*(com|cn|de)', '', author_info)
 		# 获取目录内容
 		directory = self.driver.find_elements_by_css_selector(
 			'#textbook-con > div.textbook-right.fl > div.directory > div:nth-child(2)')[0].text

@@ -8,7 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5b5a223-1037-4a74-bd0f-8fab31b42771" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Saiyan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search/search_funs.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search/search_funs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/all_created_baike.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/all_created_baike.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/create.ini" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/create.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/monitor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/monitor.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/search.ini" beforeDir="false" afterPath="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/search.ini" afterDir="false" />
     </list>
@@ -24,12 +32,12 @@
     <SUITE FILE_PATH="coverage/Python$driver.coverage" NAME="driver Coverage Results" MODIFIED="1527923405560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/driver" />
     <SUITE FILE_PATH="coverage/Python$Unittests_for_edit_baike_CreateBaike_test_edit.coverage" NAME="Unittests for edit_baike.CreateBaike.test_edit Coverage Results" MODIFIED="1528006892985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
     <SUITE FILE_PATH="coverage/Python$Unittests_for_create_baike_CreateBaike.coverage" NAME="Unittests for create_baike.CreateBaike Coverage Results" MODIFIED="1527922813603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
-    <SUITE FILE_PATH="coverage/Python$edit_funs.coverage" NAME="edit_funs Coverage Results" MODIFIED="1527865773956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit" />
+    <SUITE FILE_PATH="coverage/Python$edit_funs.coverage" NAME="edit_funs Coverage Results" MODIFIED="1528448718037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit" />
     <SUITE FILE_PATH="coverage/Python$Unittests_for_create_baike.coverage" NAME="Unittests for create_baike Coverage Results" MODIFIED="1528278361141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
-    <SUITE FILE_PATH="coverage/Python$Unittests_for_monitor_Monitor_test_monitor.coverage" NAME="Unittests for monitor.Monitor.test_monitor Coverage Results" MODIFIED="1528361908828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
-    <SUITE FILE_PATH="coverage/Python$Unittests_for_search_baike_SearchBaike.coverage" NAME="Unittests for search_baike.SearchBaike Coverage Results" MODIFIED="1528373303533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
+    <SUITE FILE_PATH="coverage/Python$Unittests_for_search_baike_SearchBaike.coverage" NAME="Unittests for search_baike.SearchBaike Coverage Results" MODIFIED="1528437525542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
+    <SUITE FILE_PATH="coverage/Python$Unittests_for_monitor_Monitor_test_monitor.coverage" NAME="Unittests for monitor.Monitor.test_monitor Coverage Results" MODIFIED="1528439294856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
     <SUITE FILE_PATH="coverage/Python$run_search.coverage" NAME="run_search Coverage Results" MODIFIED="1527729221683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website" />
-    <SUITE FILE_PATH="coverage/Python$Unittests_for_edit_baike_EditBaike_test_edit.coverage" NAME="Unittests for edit_baike.EditBaike.test_edit Coverage Results" MODIFIED="1528373273229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
+    <SUITE FILE_PATH="coverage/Python$Unittests_for_edit_baike_EditBaike_test_edit.coverage" NAME="Unittests for edit_baike.EditBaike.test_edit Coverage Results" MODIFIED="1528450740058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
     <SUITE FILE_PATH="coverage/Python$create_funs.coverage" NAME="create_funs Coverage Results" MODIFIED="1527646540796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/create" />
     <SUITE FILE_PATH="coverage/Python$Unittests_for_monitor_Monitor.coverage" NAME="Unittests for monitor.Monitor Coverage Results" MODIFIED="1527947883631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
     <SUITE FILE_PATH="coverage/Python$monitor_funs.coverage" NAME="monitor_funs Coverage Results" MODIFIED="1528001684701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/monitor" />
@@ -37,10 +45,10 @@
     <SUITE FILE_PATH="coverage/Python$Unittests_in_create_baike_py.coverage" NAME="Unittests in create_baike.py Coverage Results" MODIFIED="1527926095711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
     <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1527954835458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Python$Unittests_in_edit_baike_py.coverage" NAME="Unittests in edit_baike.py Coverage Results" MODIFIED="1528090190315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
-    <SUITE FILE_PATH="coverage/Python$Unittests_in_monitor_py.coverage" NAME="Unittests in monitor.py Coverage Results" MODIFIED="1528364840976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
-    <SUITE FILE_PATH="coverage/Python$Unittests_for_search_baike_SearchBaike_test_login.coverage" NAME="Unittests for search_baike.SearchBaike.test_login Coverage Results" MODIFIED="1528353998448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
-    <SUITE FILE_PATH="coverage/Python$search_funs.coverage" NAME="search_funs Coverage Results" MODIFIED="1527929307254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search" />
-    <SUITE FILE_PATH="coverage/Python$Unittests_for_create_baike_CreateBaike_test_login.coverage" NAME="Unittests for create_baike.CreateBaike.test_login Coverage Results" MODIFIED="1528373255013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
+    <SUITE FILE_PATH="coverage/Python$Unittests_in_monitor_py.coverage" NAME="Unittests in monitor.py Coverage Results" MODIFIED="1528421637043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
+    <SUITE FILE_PATH="coverage/Python$Unittests_for_search_baike_SearchBaike_test_login.coverage" NAME="Unittests for search_baike.SearchBaike.test_login Coverage Results" MODIFIED="1528438983167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
+    <SUITE FILE_PATH="coverage/Python$search_funs.coverage" NAME="search_funs Coverage Results" MODIFIED="1528438974602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search" />
+    <SUITE FILE_PATH="coverage/Python$Unittests_for_create_baike_CreateBaike_test_login.coverage" NAME="Unittests for create_baike.CreateBaike.test_login Coverage Results" MODIFIED="1528448561346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Python" />
@@ -48,36 +56,69 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="monitor.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/monitor.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                <state relative-caret-position="663">
+                  <caret line="40" selection-start-line="40" selection-end-line="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="create_baike.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="249">
+                  <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
                   <folding>
-                    <element signature="e#0#24#0" expanded="true" />
+                    <element signature="e#0#20#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="edit_baike.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="search_baike.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="search_baike.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-                  <folding>
-                    <element signature="e#0#43#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="272">
+                  <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="edit_baike.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="463">
+                  <caret line="148" column="87" selection-start-line="148" selection-start-column="87" selection-end-line="148" selection-end-column="87" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="book_zgrm_edit.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="edit_funs.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/edit_funs.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="225" column="11" selection-start-line="225" selection-start-column="11" selection-end-line="225" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="search_funs.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search/search_funs.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="229" selection-start-line="229" selection-end-line="229" />
                 </state>
               </provider>
             </entry>
@@ -86,14 +127,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="create_baike.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py">
+          <file leaf-file-name="search.ini" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/search.ini">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="103">
-                  <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-                  <folding>
-                    <element signature="e#0#20#0" expanded="true" />
-                  </folding>
+                <state>
+                  <caret column="52" selection-start-column="52" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -120,6 +158,7 @@
       <find>statistics</find>
       <find>is_check</find>
       <find>function</find>
+      <find>Baike</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -156,22 +195,27 @@
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/create/create_funs.py" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/page_object/monitor.py" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/search.ini" />
-        <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search/search_funs.py" />
-        <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py" />
         <option value="$APPLICATION_CONFIG_DIR$/_ideavimrc" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/all_created_baike.txt" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/monitor.ini" />
         <option value="F:/rep/gitNote/pycharm/快捷键记录.md" />
-        <option value="$USER_HOME$/.ideavimrc" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/model/function.py" />
         <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/driver/driver.py" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/monitor/monitor_funs.py" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/edit_funs.py" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/monitor.py" />
+        <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py" />
+        <option value="$USER_HOME$/.ideavimrc" />
+        <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/test.txt" />
+        <option value="F:/Ionic/baike/src/service/baike.service.ts" />
+        <option value="F:/Ionic/baike/src/pages/home/home.ts" />
+        <option value="F:/Ionic/baike/src/pages/pop-exclude-user/pop-exclude-user.ts" />
+        <option value="F:/Ionic/baike/src/pages/pop-exclude/pop-exclude.ts" />
+        <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py" />
+        <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search/search_funs.py" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py" />
         <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py" />
-        <option value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py" />
       </list>
     </option>
   </component>
@@ -199,57 +243,13 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="AutoBaikeProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="AutoBaikeProject" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="AutoBaikeProject" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="test_case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="cre&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/create_baike.py&#10;edit&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/edit_baike.py&#10;mon&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/monitor.py&#10;edi&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/baike_share/edit/edit_funs.py&#10;driver&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/driver/driver.py&#10;test&#9;FILE&#9;file://F:/WorkPlace/Python/test/test.py&#10;all_b&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_data/all_created_baike.txt&#10;sear&#9;null&#9;null&#10;searc&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/search_baike.py&#10;cr&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/create_baike.py&#10;search&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/search_baike.py&#10;coo&#9;FILE&#9;file://F:/WorkPlace/Python/test/cookie.txt&#10;boo&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py&#10;create&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/create_baike.py&#10;f&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/model/function.py" />
+    <property name="SearchEverywhereHistoryKey" value="sear&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_data/search.ini&#10;crea&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_data/create.ini&#10;edit&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/edit_baike.py&#10;all&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_data/all_created_baike.txt&#10;bo&#9;null&#9;null&#10;ed&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/baike_share/edit/edit_funs.py&#10;cre&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/create_baike.py&#10;mon&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/monitor.py&#10;edi&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/baike_share/edit/edit_funs.py&#10;driver&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/driver/driver.py&#10;test&#9;FILE&#9;file://F:/WorkPlace/Python/test/test.py&#10;all_b&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_data/all_created_baike.txt&#10;searc&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/search_baike.py&#10;cr&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/create_baike.py&#10;search&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/search_baike.py&#10;coo&#9;FILE&#9;file://F:/WorkPlace/Python/test/cookie.txt&#10;boo&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py&#10;create&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/create_baike.py&#10;f&#9;FILE&#9;file://F:/WorkPlace/Python/python/AutoBaikeProject/website/test_case/model/function.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="F:/Ionic/baike/src/pages/pop-exclude/pop-exclude.ts" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
@@ -272,7 +272,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for search_baike.SearchBaike">
+  <component name="RunManager" selected="Python tests.Unittests for edit_baike.EditBaike.test_edit">
+    <configuration name="edit_funs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/edit_funs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Unittests for create_baike" type="tests" factoryName="Unittests" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -330,7 +349,7 @@
       <option name="_new_target" value="&quot;monitor.Monitor.test_monitor&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for search_baike.SearchBaike" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for search_baike.SearchBaike.test_login" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -341,38 +360,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;search_baike.SearchBaike&quot;" />
+      <option name="_new_target" value="&quot;search_baike.SearchBaike.test_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Unittests in monitor.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/AutoBaikeProject/website/test_case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/monitor.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
       <item itemvalue="Python tests.Unittests for create_baike" />
       <item itemvalue="Python tests.Unittests for monitor.Monitor.test_monitor" />
-      <item itemvalue="Python tests.Unittests for create_baike.CreateBaike.test_login" />
       <item itemvalue="Python tests.Unittests for edit_baike.EditBaike.test_edit" />
-      <item itemvalue="Python tests.Unittests in monitor.py" />
-      <item itemvalue="Python tests.Unittests for search_baike.SearchBaike" />
+      <item itemvalue="Python tests.Unittests for search_baike.SearchBaike.test_login" />
+      <item itemvalue="Python tests.Unittests for create_baike.CreateBaike.test_login" />
+      <item itemvalue="Python.edit_funs" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for search_baike.SearchBaike" />
         <item itemvalue="Python tests.Unittests for edit_baike.EditBaike.test_edit" />
+        <item itemvalue="Python.edit_funs" />
         <item itemvalue="Python tests.Unittests for create_baike.CreateBaike.test_login" />
-        <item itemvalue="Python tests.Unittests in monitor.py" />
         <item itemvalue="Python tests.Unittests for monitor.Monitor.test_monitor" />
+        <item itemvalue="Python tests.Unittests for search_baike.SearchBaike.test_login" />
       </list>
     </recent_temporary>
   </component>
@@ -408,39 +413,46 @@
       <option name="project" value="LOCAL" />
       <updated>1528375702037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="good version1">
+      <created>1528376038346</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528376038346</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_monitor_Monitor_test_monitor - 2018.06.07 at 15h 15m 52s.xml">
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 21m 50s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 22m 34s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 23m 36s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 25m 25s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 30m 20s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 30m 57s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 31m 34s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 38m 21s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.08 at 17h 40m 43s.xml">
+      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_monitor_Monitor_test_monitor - 2018.06.08 at 21h 09m 37s.xml">
       <configuration name="Unittests for monitor.Monitor.test_monitor" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_create_baike_CreateBaike_test_login - 2018.06.07 at 15h 41m 34s.xml">
-      <configuration name="Unittests for create_baike.CreateBaike.test_login" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.07 at 17h 00m 45s.xml">
-      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_monitor_Monitor_test_monitor - 2018.06.07 at 17h 06m 21s.xml">
-      <configuration name="Unittests for monitor.Monitor.test_monitor" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.07 at 17h 06m 50s.xml">
-      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_create_baike_CreateBaike_test_login - 2018.06.07 at 17h 15m 36s.xml">
-      <configuration name="Unittests for create_baike.CreateBaike.test_login" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_create_baike_CreateBaike_test_login - 2018.06.07 at 17h 18m 05s.xml">
-      <configuration name="Unittests for create_baike.CreateBaike.test_login" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_search_baike_SearchBaike - 2018.06.07 at 20h 08m 36s.xml">
-      <configuration name="Unittests for search_baike.SearchBaike" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_create_baike_CreateBaike_test_login - 2018.06.07 at 20h 12m 03s.xml">
-      <configuration name="Unittests for create_baike.CreateBaike.test_login" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_edit_baike_EditBaike_test_edit - 2018.06.07 at 20h 14m 48s.xml">
-      <configuration name="Unittests for edit_baike.EditBaike.test_edit" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -455,26 +467,27 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32978722" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30319148" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3287234" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49810606" weight="0.18333334" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="TODO" order="9" weight="0.329294" />
+      <window_info anchor="right" id="Event Log" order="7" side_tool="true" weight="0.32999474" />
+      <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
+      <window_info anchor="right" id="Version Control" order="10" weight="0.329294" />
+      <window_info anchor="right" id="Python Console" order="11" weight="0.32982087" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.50080645" weight="0.38017428" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49919355" weight="0.33660132" />
+      <window_info anchor="bottom" id="TypeScript" weight="0.32897604" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="5" sideWeight="0.49810606" weight="0.18282403" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.500813" side_tool="true" weight="0.14925373" />
-      <window_info id="Favorites" order="2" sideWeight="0.50189394" side_tool="true" weight="0.14925373" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Structure" order="6" sideWeight="0.500813" side_tool="true" weight="0.14925373" />
+      <window_info anchor="right" id="Favorites" order="8" sideWeight="0.50189394" side_tool="true" weight="0.14910433" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24973656" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
     </layout>
   </component>
@@ -519,49 +532,16 @@
     <MESSAGE value="k" />
     <MESSAGE value="test" />
     <MESSAGE value="good version" />
-    <option name="LAST_COMMIT_MESSAGE" value="good version" />
+    <MESSAGE value="good version1" />
+    <option name="LAST_COMMIT_MESSAGE" value="good version1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="23" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/page_object/base_page.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/page_object/login_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/page_object/trade_login.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/run_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/driver/driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/page_object/base_page.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -646,20 +626,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/debug.log" />
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search/search_funs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2107">
-          <caret line="211" column="29" lean-forward="true" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/search.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="52" selection-start-column="52" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/create/create_funs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -703,13 +669,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/_ideavimrc" />
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/model/myclass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -724,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/create.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="71" selection-start-column="71" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/VIM/_vimrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -742,13 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.ideavimrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -781,20 +726,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/all_created_baike.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/model/function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
-          <folding>
-            <element signature="e#23#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,50 +754,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/edit_funs.py">
+    <entry file="file://E:/Python/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="215" column="40" selection-start-line="215" selection-start-column="40" selection-end-line="215" selection-end-column="40" />
+        <state relative-caret-position="1660">
+          <caret line="1343" column="31" selection-start-line="1343" selection-start-column="31" selection-end-line="1343" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/all_created_baike.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Ionic/baike/src/service/baike.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
           <folding>
-            <element signature="e#2212#2412#0" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py">
+    <entry file="file://F:/Ionic/baike/src/pages/home/home.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#307#355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Ionic/baike/src/pages/pop-exclude-user/pop-exclude-user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Ionic/baike/src/pages/pop-exclude/pop-exclude.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.ideavimrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/create.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="71" selection-start-column="71" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/monitor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="663">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/search/search_funs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/create_baike.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        <state relative-caret-position="249">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/edit_funs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="225" column="11" selection-start-line="225" selection-start-column="11" selection-end-line="225" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_data/search.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/baike_share/edit/book_zgrm_edit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/search_baike.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/AutoBaikeProject/website/test_case/edit_baike.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="148" column="87" selection-start-line="148" selection-start-column="87" selection-end-line="148" selection-end-column="87" />
         </state>
       </provider>
     </entry>

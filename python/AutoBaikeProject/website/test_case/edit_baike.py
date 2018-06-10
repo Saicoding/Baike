@@ -18,8 +18,8 @@ class EditBaike(myunit.StartEnd):
 	def test_edit(self):
 		mod = {
 			'order': 4,  # 1顺序，2随机，3倒叙,4单点
-			'each_num': 6,  # 表示每个帐户编辑的词条数
-			'index': 2  # 从第几个账号开始4
+			'each_num': 10,  # 表示每个帐户编辑的词条数
+			'index': 16  # 从第几个账号开始4
 		}
 		start_user_index = mod['index']
 		users = [
@@ -137,7 +137,16 @@ class EditBaike(myunit.StartEnd):
 						"data-lemmaid")
 					# 打开词条连接
 					self.driver.get('http://baike.baidu.com/edit/1/' + str(num))
-
+					is_new = False
+					try:
+						WebDriverWait(self.driver, 5, 0.5).until(EC.presence_of_element_located((By.ID, 'introjs-skipbutton')))
+						is_new = True
+					except:
+						pass
+					finally:
+						if is_new:
+							print( '是真的' )
+							self.driver.find_element_by_id('introjs-skipbutton').click()
 					WebDriverWait(self.driver, 10, 0.5).until(EC.presence_of_element_located((By.ID, 'bke_title')))
 					# 添加基本信息栏
 					edit_funs.add_card(self.driver, result)
@@ -145,7 +154,7 @@ class EditBaike(myunit.StartEnd):
 
 					# 添加概述图
 					edit_funs.add_summary_pic(self.driver, result)
-					sleep(2)
+					sleep(5)
 
 					# 切换到编辑界面
 					self.driver.switch_to_frame('ueditor_0')
